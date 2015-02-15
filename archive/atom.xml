@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>
+        BASIC blog full text feed    </title>
+        <link href="/archive/atom.xml" rel="self" />
+    
+        <link href="/"/>
+    
+        
+    <updated>2015-02-16T02:11:26Z</updated>
+
+    <id>/archive/atom.xml/</id>
+
+    </feed>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>
+        BASIC blog excerpts feed    </title>
+        <link href="/blog/excerpts.xml" rel="self" />
+    
+        <link href="/"/>
+    
+        
+    <updated>2015-02-16T02:11:27Z</updated>
+
+    <id>/blog/excerpts.xml/</id>
+
+            <entry>
+            <title type="html">Redesigned website using material design</title>
+            <author><name>Varun Malhotra</name></author>
+            <link href="/blog/2015/02/redesigned-theme-using-materiaize.html"/>
+            <updated>2015-02-10T01:40:00Z</updated>
+            <published>2015-02-10T01:40:00Z</published>
+            <id>/blog/2015/02/redesigned-theme-using-materiaize.html</id>
+                        <category   scheme="/blog/tags"
+                        term="materialize"
+                        label="Materialize" />
+                        <category   scheme="/blog/tags"
+                        term="material design"
+                        label="Material Design" />
+            
+            <content type="html">
+                
+                &lt;p&gt;Will be adding &lt;em&gt;how I redesigned this personal website using awesome &lt;a href=&#34;http://materializecss.com/&#34;&gt;Materialize&lt;/a&gt; framework&lt;/em&gt;&amp;nbsp;soon.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">FIREFOX-OS App-2 (GistHub)</title>
+            <author><name>Varun Malhotra</name></author>
+            <link href="/blog/2013/07/fOS-GistHub.html"/>
+            <updated>2013-07-12T00:00:00Z</updated>
+            <published>2013-07-12T00:00:00Z</published>
+            <id>/blog/2013/07/fOS-GistHub.html</id>
+                        <category   scheme="/blog/tags"
+                        term="HTML5"
+                        label="Html5" />
+                        <category   scheme="/blog/tags"
+                        term="CSS3"
+                        label="Css3" />
+                        <category   scheme="/blog/tags"
+                        term="JavaScript"
+                        label="Javascript" />
+                        <category   scheme="/blog/tags"
+                        term="JQuery"
+                        label="Jquery" />
+                        <category   scheme="/blog/tags"
+                        term="AJAX"
+                        label="Ajax" />
+                        <category   scheme="/blog/tags"
+                        term="IndexedDB"
+                        label="Indexeddb" />
+                        <category   scheme="/blog/tags"
+                        term="Bootstrap"
+                        label="Bootstrap" />
+                        <category   scheme="/blog/tags"
+                        term="GithubAPI"
+                        label="Githubapi" />
+            
+            <content type="html">
+                
+                &lt;p&gt;Yay! this is my second approved &lt;span class=&#34;caps&#34;&gt;FIREFOX&lt;/span&gt;-&lt;span class=&#34;caps&#34;&gt;OS&lt;/span&gt;(&lt;span class=&#34;caps&#34;&gt;FOS&lt;/span&gt;) App- &lt;strong&gt;GistHub&lt;/strong&gt;, after the basic &lt;a href=&#34;../07/fOS-intro.html&#34;&gt;Calculator&lt;/a&gt; app. It&amp;#8217;s an app for firefox smartphones, which helps Github Users to access and manage their Gists instantly without opening the site in browser. It&amp;#8217;s free to download from &lt;a href=&#34;https://marketplace.firefox.com/app/gisthub/&#34;&gt;Firefox marketplace&lt;/a&gt; for firefox smartphones&amp;nbsp;:)&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Hands on FIREFOX-OS Apps(CSP)</title>
+            <author><name>Varun Malhotra</name></author>
+            <link href="/blog/2013/07/fOS-intro.html"/>
+            <updated>2013-07-01T00:00:00Z</updated>
+            <published>2013-07-01T00:00:00Z</published>
+            <id>/blog/2013/07/fOS-intro.html</id>
+                        <category   scheme="/blog/tags"
+                        term="HTML5"
+                        label="Html5" />
+                        <category   scheme="/blog/tags"
+                        term="CSS3"
+                        label="Css3" />
+                        <category   scheme="/blog/tags"
+                        term="JavaScript"
+                        label="Javascript" />
+                        <category   scheme="/blog/tags"
+                        term="CSP"
+                        label="Csp" />
+            
+            <content type="html">
+                
+                &lt;p&gt;I&amp;#8217;m a die-hard fan of Mozilla Firefox. I always wanted to contribute to Mozilla in one or the other ways. This year only, it happened that I started getting involved in Open Source projects. Good Luck that I was familiar with &lt;strong&gt;Git&lt;/strong&gt; as I used it merely for the purpose of storing my college projects :). Mozilla&amp;#8217;s Open Source projects inspired me to contribute this time. Meanwhile, I heard the news of &lt;span class=&#34;caps&#34;&gt;FIREFOX&lt;/span&gt;-&lt;span class=&#34;caps&#34;&gt;OS&lt;/span&gt;, yeah, &lt;span class=&#34;caps&#34;&gt;FIREFOX&lt;/span&gt;-&lt;span class=&#34;caps&#34;&gt;OS&lt;/span&gt;(&lt;span class=&#34;caps&#34;&gt;FOS&lt;/span&gt;) is a Linux-based open source operating system for smartphones and tablet computers being developed by&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;MOZILLA&lt;/span&gt;.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Getting Started with Hyde</title>
+            <author><name>Varun Malhotra</name></author>
+            <link href="/blog/2013/06/hyde.html"/>
+            <updated>2013-06-04T20:00:00Z</updated>
+            <published>2013-06-04T20:00:00Z</published>
+            <id>/blog/2013/06/hyde.html</id>
+                        <category   scheme="/blog/tags"
+                        term="python"
+                        label="Python" />
+                        <category   scheme="/blog/tags"
+                        term="django"
+                        label="Django" />
+                        <category   scheme="/blog/tags"
+                        term="markdown"
+                        label="Markdown" />
+                        <category   scheme="/blog/tags"
+                        term="jinja2"
+                        label="Jinja2" />
+                        <category   scheme="/blog/tags"
+                        term="hyde"
+                        label="Hyde" />
+            
+            <content type="html">
+                
+                &lt;p&gt;A will for creating a personal portfolio cum blog site, after spending a lot of time researching and experimenting with various frameworks, came to an end with this. I&amp;#8217;m glad to discuss my experience with a new open-source technology, smelting this site, &lt;a href=&#34;http://hyde.com&#34; title=&#34;HYDE&#39;s official site&#34;&gt;&lt;span class=&#34;caps&#34;&gt;HYDE&lt;/span&gt;&lt;/a&gt;. &lt;span class=&#34;caps&#34;&gt;HYDE&lt;/span&gt;&amp;#8217;s built-in web server + auto-generator provide instant refresh and unlimited flexibility. No database, no slowness, no&amp;nbsp;digg-effect.&lt;/p&gt;            </content>
+        </entry>
+    </feed>

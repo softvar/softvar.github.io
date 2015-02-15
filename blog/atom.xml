@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>
+        BASIC blog full text feed    </title>
+        <link href="/blog/atom.xml" rel="self" />
+    
+        <link href="/"/>
+    
+        
+    <updated>2015-02-16T02:11:26Z</updated>
+
+    <id>/blog/atom.xml/</id>
+
+            <entry>
+            <title type="html">Redesigned website using material design</title>
+            <author><name>Varun Malhotra</name></author>
+            <link href="/blog/2015/02/redesigned-theme-using-materiaize.html"/>
+            <updated>2015-02-10T01:40:00Z</updated>
+            <published>2015-02-10T01:40:00Z</published>
+            <id>/blog/2015/02/redesigned-theme-using-materiaize.html</id>
+                        <category   scheme="/blog/tags"
+                        term="materialize"
+                        label="Materialize" />
+                        <category   scheme="/blog/tags"
+                        term="material design"
+                        label="Material Design" />
+            
+            <content type="html">
+                                            </content>
+        </entry>
+            <entry>
+            <title type="html">FIREFOX-OS App-2 (GistHub)</title>
+            <author><name>Varun Malhotra</name></author>
+            <link href="/blog/2013/07/fOS-GistHub.html"/>
+            <updated>2013-07-12T00:00:00Z</updated>
+            <published>2013-07-12T00:00:00Z</published>
+            <id>/blog/2013/07/fOS-GistHub.html</id>
+                        <category   scheme="/blog/tags"
+                        term="HTML5"
+                        label="Html5" />
+                        <category   scheme="/blog/tags"
+                        term="CSS3"
+                        label="Css3" />
+                        <category   scheme="/blog/tags"
+                        term="JavaScript"
+                        label="Javascript" />
+                        <category   scheme="/blog/tags"
+                        term="JQuery"
+                        label="Jquery" />
+                        <category   scheme="/blog/tags"
+                        term="AJAX"
+                        label="Ajax" />
+                        <category   scheme="/blog/tags"
+                        term="IndexedDB"
+                        label="Indexeddb" />
+                        <category   scheme="/blog/tags"
+                        term="Bootstrap"
+                        label="Bootstrap" />
+                        <category   scheme="/blog/tags"
+                        term="GithubAPI"
+                        label="Githubapi" />
+            
+            <content type="html">
+                                            </content>
+        </entry>
+            <entry>
+            <title type="html">Hands on FIREFOX-OS Apps(CSP)</title>
+            <author><name>Varun Malhotra</name></author>
+            <link href="/blog/2013/07/fOS-intro.html"/>
+            <updated>2013-07-01T00:00:00Z</updated>
+            <published>2013-07-01T00:00:00Z</published>
+            <id>/blog/2013/07/fOS-intro.html</id>
+                        <category   scheme="/blog/tags"
+                        term="HTML5"
+                        label="Html5" />
+                        <category   scheme="/blog/tags"
+                        term="CSS3"
+                        label="Css3" />
+                        <category   scheme="/blog/tags"
+                        term="JavaScript"
+                        label="Javascript" />
+                        <category   scheme="/blog/tags"
+                        term="CSP"
+                        label="Csp" />
+            
+            <content type="html">
+                                            </content>
+        </entry>
+            <entry>
+            <title type="html">Getting Started with Hyde</title>
+            <author><name>Varun Malhotra</name></author>
+            <link href="/blog/2013/06/hyde.html"/>
+            <updated>2013-06-04T20:00:00Z</updated>
+            <published>2013-06-04T20:00:00Z</published>
+            <id>/blog/2013/06/hyde.html</id>
+                        <category   scheme="/blog/tags"
+                        term="python"
+                        label="Python" />
+                        <category   scheme="/blog/tags"
+                        term="django"
+                        label="Django" />
+                        <category   scheme="/blog/tags"
+                        term="markdown"
+                        label="Markdown" />
+                        <category   scheme="/blog/tags"
+                        term="jinja2"
+                        label="Jinja2" />
+                        <category   scheme="/blog/tags"
+                        term="hyde"
+                        label="Hyde" />
+            
+            <content type="html">
+                                            </content>
+        </entry>
+    </feed>

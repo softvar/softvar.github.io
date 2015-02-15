@@ -1,0 +1,408 @@
+<!doctype html>
+<!-- https://github.com/paulirish/html5-boilerplate/blob/master/index.html -->
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="">
+
+  <!-- encoding must be specified within the first 512 bytes
+        www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html#charset -->
+
+  <!-- meta element for compatibility mode needs to be before
+        all elements except title & meta
+        msdn.microsoft.com/en-us/library/cc288325(VS.85).aspx -->
+  <!-- Chrome Frame is only invoked if meta element for
+        compatibility mode is within the first 1K bytes
+        code.google.com/p/chromium/issues/detail?id=23003 -->
+
+  <title>Hands on FIREFOX-OS Apps(CSP)</title>
+  <meta name="description" content="Smile. Laugh.
+">
+  <meta name="author" content="Varun Malhotra">
+
+  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="">
+
+    <!-- Place favicon.ico & apple-touch-icon.png
+        in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/media/favicon.ico">
+  <!-- <link rel="apple-touch-icon" href="/media/apple-touch-icon.png"> -->
+  
+    <link rel="stylesheet" type="text/css" href="/media/css/materialize.css">
+  <link rel="stylesheet" type="text/css" href="/media/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="/media/css/jquery.sidr.dark.css">
+
+    <link rel="stylesheet" href="/media/css/kudos.min.css">
+
+  <link rel="stylesheet" href="/media/css/site.css">
+  <link rel="stylesheet" href="/media/css/syntax.css">
+
+  <!-- Add custom CSS here -->
+  <link rel="stylesheet" type="text/css" href="/media/css/custom.css">
+  
+    <!-- All JavaScript at the bottom, except for Modernizr which
+        enables HTML5 elements & feature detects -->
+    <script src="/media/js/libs/jquery.min.js"></script>
+    <script src="/media/js/libs/jquery.sidr.min.js"></script>
+    <script src="/media/js/libs/modernizr-1.7.min.js"></script>
+    <script src="/media/js/libs/jquery.scrollUp.min.js"></script>
+    <script type="text/javascript" src="https://github.com/Dogfalo/materialize/blob/master/dist/js/materialize.min.js"></script>
+    <!-- <script src="/media/js/libs/no-crack.js"></script> -->
+
+
+      <!-- Kudos script -->
+  <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.1.2/firebase.js'></script>
+  <script type="text/javascript" src="/media/js/libs/kudos.min.js"></script>
+  <script type="text/javascript" src="/media/js/libs/kudos.firebase.min.js"></script>
+  <script type="text/javascript" src="/media/js/libs/countable.js"></script>
+  <script type="text/javascript" src="/media/js/libs/moment.min.js"></script>
+<!--   // <script type="text/javascript" src="/media/js/libs/no-crack.js"></script> -->
+</head>
+<body id="fOS-intro">
+
+  
+
+      <div class="topbar">
+              <div class="fixed-topbar  pull--right">
+          <div class="social-links" style="margin-right:50px;margin-top:25px;">
+            <a href="http://twitter.com/s0ftvar" target="_blank" ><i class="fa  fa-twitter  fa-2x" title="Twitter" ></i></a>
+            <a href="http://github.com/softvar" target="_blank" ><i class="fa  fa-github  fa-2x " title="Github"></i></a>
+            <a href="http://www.linkedin.com/pub/varun-malhotra/71/a14/131" target="_blank" ><i class="fa  fa-linkedin  fa-2x" title="LinkedIn" ></i></a>
+          </div>
+        </div>
+            </div>
+
+    <div class="side-nav-button">
+      <a id="sidebar-nav" class="tooltipped" href="#sidr" data-position="right" data-tooltip="Open side navbar">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div id="sidr">
+      <div class="container" style="margin-top:30px;width:90%;">
+        <div class="slider">
+          <ul class="slides">
+            <li>
+             <img class="circle  responsive-img  dude-pic" src="/media/img/me__1.jpg">
+            </li>
+            <li>
+              <img class="circle  responsive-img  dude-pic" src="/media/img/me__2.jpg">
+            </li>
+            <li>
+              <img class="circle  responsive-img  dude-pic" src="/media/img/me__4.jpg">
+            </li>
+          </ul>
+          <div style="text-align:center;">Varun Malhotra</div>
+        </div>
+        <div class="" id="social-icons">
+          <a href="http://www.linkedin.com/pub/varun-malhotra/71/a14/131" target="_blank" ><i class="fa  fa-linkedin  fa-2x " title="LinkedIn" ></i></a>
+          <a href="http://twitter.com/s0ftvar" target="_blank" ><i class="fa  fa-twitter  fa-2x " title="Twitter" ></i></a>
+          <a href="http://stackoverflow.com/users/2494535/varun-malhotra" target="_blank" ><i class="fa  fa-stack-overflow  fa-2x " title= "Stackoverflow"></i></a>
+          <a href="http://github.com/softvar" target="_blank" ><i class="fa  fa-github  fa-2x " title="Github"></i></a>
+        </div>
+      </div>
+      <div class="side-navbar">
+        <ul style="margin-top:50px;">
+          <li><a href="/" class="side--home"><i class="fa fa-home fa-2x"></i> Home</a></li>
+          <li  class="active"><a href="/blog"><i class="fa fa-terminal fa-2x"></i> Blog</a></li>
+          <li ><a href="/archive" class="side--archive"><i class="fa fa-archive fa-2x"></i> Archive</a></li>
+          <li ><a href="/portfolio" class="side--projects"><i class="fa fa-code fa-2x"></i> Projects</a></li>
+          <li ><a href="/about" class="side--about"><i class="fa fa-home fa-2x"></i> About</a></li>
+          <li ><a href="/contact" class="side--contact"><i class="fa fa-send fa-2x"></i> Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+      <div class="all-body-click-region"  style="margin-top:-20px;" >
+            
+
+        <div class="container"  style="width:75%;" >
+<span class="tweetShortUrl" style="display:none;">https://bit.ly/1zWUFwk</span>
+    <div id="main" role="main" class="row">
+      <!-- Show Table of contents for blog posts, if available -->
+            <div class="col s2">
+          <div style="margin-top:400px;">
+            <div style="">
+              <ul class="section table-of-contents" style="margin-top:200px;">
+                <li style="color:#222;font-weight:bold;padding-bottom:5px;">Table of Contents</li>
+                                  <li><a href="#gettingStarted">Gettingstarted</a></li>
+                                  <li><a href="#csp">Csp</a></li>
+                                  <li><a href="#links">Links</a></li>
+                              </ul>
+            </div>
+          </div>
+      </div>
+            <br/>
+    <section  class="content col s10" >
+
+    
+      <script type="text/javascript">
+        // Floating-Fixed table of contents
+        $(function() {
+
+          setTimeout(function () {
+            if ($('.table-of-contents').length) {
+              if ($('.table-of-contents').length) {
+                var toc_offset = $('.table-of-contents').first().offset().top;
+                console.log(toc_offset)
+                $('.table-of-contents').each(function() {
+                  var origin = $(this);
+                  origin.pushpin({ top: toc_offset-200, bottom: $(document).height() - window.innerHeight });
+                });
+              }
+            }
+          }, 200);
+        });
+      </script>
+      
+      <h1 class="title">
+          <a href="/blog/2013/07/fOS-intro.html">
+              Hands on FIREFOX-OS Apps(CSP)
+          </a>
+      </h1>
+      <div class="row" style="margin-top:50px;">
+        <div class="col offset-s2 s6 vertical-center">
+          <img class="circle  responsive-img  blog-dude-pic  materialboxed" data-caption="Me building the next generation software at Wingify, India :)" src="/media/img/me__2.jpg">
+          <time datetime="2013-07-01" class="grey-text" style="margin-left:5px;">
+              <b><i><a href="/about">Varun</a></i></b> wrote this on Mon, 01 Jul 2013
+          </time>
+        </div>
+        <div class="col offset-s1 s1">
+          <figure class="kudo"  style="margin-top:0px;" ></figure>
+        </div>
+      </div>
+
+      <div class="reading-time grey-text" style="text-align:center"></div>
+      <article class="post" id="main-countable-content">
+        <p>I&#8217;m a die-hard fan of Mozilla Firefox. I always wanted to contribute to Mozilla in one or the other ways. This year only, it happened that I started getting involved in Open Source projects. Good Luck that I was familiar with <strong>Git</strong> as I used it merely for the purpose of storing my college projects :). Mozilla&#8217;s Open Source projects inspired me to contribute this time. Meanwhile, I heard the news of <span class="caps">FIREFOX</span>-<span class="caps">OS</span>, yeah, <span class="caps">FIREFOX</span>-<span class="caps">OS</span>(<span class="caps">FOS</span>) is a Linux-based open source operating system for smartphones and tablet computers being developed by&nbsp;<span class="caps">MOZILLA</span>.</p>
+<p>So the journey begins from here. I found an article to get started with developing <span class="caps">FIREFOX</span>-<span class="caps">OS</span> Applications, apps nothing more than Open web pages, that is <span class="caps">HTML5</span> Apps. Yeah! right, directly reuse the prior knowledge about front-end development to create awesome applications running on firefox <span class="caps">OS</span>&nbsp;phones.</p>
+<p>Here it is! Beautiful official <a href="https://www.mozilla.org/en-US/firefox/os/" target="_blank"><span class="caps">FIREFOX</span>-<span class="caps">OS</span></a>&nbsp;website.</p>
+<div id="gettingStarted" class="section scrollspy  push-half--top">
+
+
+<h2>Getting started with <span class="caps">FOS</span>-App: Calculator <a href="#gettingStarted"><i class="fa fa-link  content-link"></i></a></h2>
+<p>I started developing an App for <span class="caps">FOS</span>, though a simple Calculator App performing some basic arithmetic calculations. I opted this app just to give a try and get familiar with the process that goes around. I successfully created the app using <span class="caps">HTML5</span>, <span class="caps">CSS3</span> and JavaScript. It&#8217;s so simple no, easily have an <span class="caps">FOS</span> app from your already created <span class="caps">HTML5</span> driven&nbsp;app.</p>
+<p>I follow the procedure to submit an <span class="caps">FOS</span> app on firefox marketplace. I use App Validator just to ensure me that my App is too good :). App Validation failed with errors and warnings. Crap! Wait! What&#8217;s that? <span class="caps">CSP</span> validation errors and warnings. Ah, that&#8217;s what Mozilla always focus on, <strong>Security</strong>.</p>
+<p>A primary goal of <span class="caps">CSP</span> is to mitigate and report <span class="caps">XSS</span> attacks. <span class="caps">XSS</span> attacks exploit the browser&#8217;s trust of the content received from the server. Malicious scripts are executed by the victim&#8217;s browser because the browser trusts the source of the content, even when it&#8217;s not coming from where it seems to be coming&nbsp;from.</p>
+<p><strong>Content Security Policy (<span class="caps">CSP</span>)</strong> is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (<span class="caps">XSS</span>) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of&nbsp;malware.</p>
+<p><span class="caps">CSP</span> is designed to be fully backward compatible; browsers that don&#8217;t support it still work with servers that implement it, and vice-versa. Browsers that don&#8217;t support <span class="caps">CSP</span> simply ignore it, functioning as usual, defaulting to the standard same-origin policy for web content. If the site doesn&#8217;t offer the <span class="caps">CSP</span> header, browsers likewise use the standard same-origin&nbsp;policy.</p>
+<p><em>Here is a list of <a href="https://developer.mozilla.org/en-US/docs/Security/CSP/Default_CSP_restrictions" target="_blank">Default <span class="caps">CSP</span>&nbsp;restrictions</a></em></p>
+<p>eval() is one such Default_CSP_restriction and <em>was</em> also the core of my Calcultor app&nbsp;:)</p>
+</div><div id="csp" class="section scrollspy  push-half--top">
+
+
+<h2>Dealing with <span class="caps">CSP</span> <a href="#csp"><i class="fa fa-link  content-link"></i></a></h2>
+<p>Include <strong>&#8216;use strict&#8217;</strong> in your script files. Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a &#8220;strict&#8221; operating context. This strict context prevents certain actions from being taken and throws more&nbsp;exceptions.</p>
+<p>A nice Reference to it by Mozilla. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode" target="_blank">Strict_mode</a></p>
+<p>Initialized my own load method named <em>init</em>&nbsp;as</p>
+<div class="codebox"><figure class="code"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">Calculator</span> <span class="o">=</span> <span class="p">{</span><br />  <span class="nx">init</span><span class="o">:</span> <span class="kd">function</span> <span class="nx">init</span><span class="p">()</span> <span class="p">{</span><br />    <span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;mousedown&#39;</span><span class="p">,</span> <span class="k">this</span><span class="p">);</span><br />  <span class="p">},</span><br /><span class="p">};</span><br />&nbsp;<br /><span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;load&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="nx">load</span><span class="p">(</span><span class="nx">evt</span><span class="p">)</span> <span class="p">{</span><br />  <span class="nb">window</span><span class="p">.</span><span class="nx">removeEventListener</span><span class="p">(</span><span class="s1">&#39;load&#39;</span><span class="p">,</span> <span class="nx">load</span><span class="p">);</span><br />  <span class="nx">Calculator</span><span class="p">.</span><span class="nx">init</span><span class="p">();</span><br /><span class="p">});</span><br /></pre></div><br /><figcaption>JavaScript</figcaption></figure></div>
+
+<p>Functions like onclick, onmousedown, and so on called within <span class="caps">HTML</span> file are restricted. So I suggest using <em>data-type attribute</em> and listening events in the method defined as <em>handleEvent</em></p>
+<div class="codebox"><figure class="code"><div class="highlight"><pre><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">id=</span><span class="s">&quot;_BUTTON-<span class="caps">ID</span>&quot;</span> <span class="na">value=</span><span class="s">&quot;_Submit&quot;</span> <span class="na">data-type=</span><span class="s">&quot;submit&quot;</span> <span class="nt">/&gt;</span><br /><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span>   <span class="na">id=</span><span class="s">&quot;_BUTTON-<span class="caps">ID</span>&quot;</span> <span class="na">value=</span><span class="s">&quot;_TextMe&quot;</span> <span class="na">data-type=</span><span class="s">&quot;text&quot;</span> <span class="nt">/&gt;</span><br /></pre></div><br /><figcaption><span class="caps">HTML</span></figcaption></figure></div>
+
+<div class="codebox"><figure class="code"><div class="highlight"><pre><span class="nx">handleEvent</span><span class="o">:</span> <span class="kd">function</span> <span class="nx">handleEvent</span><span class="p">(</span><span class="nx">evt</span><span class="p">)</span> <span class="p">{</span><br />  <span class="k">this</span><span class="p">.</span><span class="nx">target</span> <span class="o">=</span> <span class="mi">111</span> <span class="o">||</span> <span class="nx">evt</span><span class="p">.</span><span class="nx">target</span><span class="p">;</span> <span class="c1">// get the target/caller invoking it</span><br />  <span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">,</span>   <span class="c1">// get the value of attribute *value* of caller</span><br />      <span class="nx">id</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">id</span><span class="p">;</span>         <span class="c1">// get the id of caller</span><br />&nbsp;<br />  <span class="k">switch</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">dataset</span><span class="p">.</span><span class="nx">type</span><span class="p">)</span> <span class="p">{</span><br />    <span class="k">case</span> <span class="s1">&#39;submit&#39;</span><span class="o">:</span> <span class="c1">// check the data-type</span><br />      <span class="k">this</span><span class="p">.</span><span class="nx">CALL_DESIRED_FUNCTION_NAME</span><span class="p">(</span><span class="o">*</span><span class="nx">params</span><span class="o">*</span><span class="p">)</span> <span class="c1">// call event driven function</span><br />      <span class="k">break</span><span class="p">;</span><br />      <span class="cm">/* all cases as per your data-type attribute goes here...</span><br /><span class="cm">       don&#39;t forget to use *break;* unless more than one data-types</span><br /><span class="cm">       need to behave similar on events. */</span><br />  <span class="p">}</span><br /><span class="p">}</span><br /></pre></div><br /><figcaption>JavaScript</figcaption></figure></div>
+
+<p>After adopting <span class="caps">CSP</span> rules, I headed towards designing my own <em>eval</em> method since it is restricted by <span class="caps">CSP</span>. Below is the code to execute valid arithmetic expressions without using the JavaScript function <em>eval()</em>.</p>
+<p>Note: <em>this.disp.value</em> is containing the arithmetic expression given as an input by the user in the text&nbsp;field.</p>
+<div class="codebox"><figure class="code"><div class="highlight"><pre><span class="nx">compute</span><span class="o">:</span> <span class="kd">function</span> <span class="nx">compute</span><span class="p">()</span> <span class="p">{</span><br />  <span class="kd">var</span> <span class="nx">sign</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span><br />  <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">disp</span><span class="p">.</span><span class="nx">value</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;-&#39;</span><span class="p">)</span> <span class="p">{</span><br />    <span class="nx">sign</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span><br />  <span class="p">}</span><br />&nbsp;<br />  <span class="k">this</span><span class="p">.</span><span class="nx">disp</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">calculate</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">disp</span><span class="p">.</span><span class="nx">value</span><span class="p">,</span><span class="nx">sign</span><span class="p">);</span><br />  <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">disp</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span><br /><span class="p">},</span><br />&nbsp;<br /><span class="nx">calculate</span><span class="o">:</span> <span class="kd">function</span> <span class="nx">calculate</span><span class="p">(</span><span class="nx">input</span><span class="p">,</span> <span class="nx">sign</span><span class="p">)</span> <span class="p">{</span><br />   <span class="kd">var</span> <span class="nx">opr_list</span> <span class="o">=</span> <span class="p">{</span><br />      <span class="nx">add</span> <span class="o">:</span> <span class="s1">&#39;+&#39;</span><span class="p">,</span><br />      <span class="nx">sub</span> <span class="o">:</span> <span class="s1">&#39;-&#39;</span><span class="p">,</span><br />      <span class="nx">div</span> <span class="o">:</span> <span class="s1">&#39;/&#39;</span><span class="p">,</span><br />      <span class="nx">mlt</span> <span class="o">:</span> <span class="s1">&#39;*&#39;</span><span class="p">,</span><br />      <span class="nx">mod</span> <span class="o">:</span> <span class="s1">&#39;%&#39;</span><span class="p">,</span><br />      <span class="nx">pow</span> <span class="o">:</span> <span class="s1">&#39;^&#39;</span><br />  <span class="p">};</span><br />&nbsp;<br />   <span class="nx">opr_list</span><span class="p">.</span><span class="nx">opr</span> <span class="o">=</span> <span class="p">[[</span> <span class="p">[</span><span class="nx">opr_list</span><span class="p">.</span><span class="nx">mlt</span><span class="p">]</span> <span class="p">,</span> <span class="p">[</span><span class="nx">opr_list</span><span class="p">.</span><span class="nx">div</span><span class="p">]</span> <span class="p">,</span> <span class="p">[</span><span class="nx">opr_list</span><span class="p">.</span><span class="nx">mod</span><span class="p">]],</span><br />            <span class="p">[</span> <span class="p">[</span><span class="nx">opr_list</span><span class="p">.</span><span class="nx">add</span><span class="p">]</span> <span class="p">,</span> <span class="p">[</span><span class="nx">opr_list</span><span class="p">.</span><span class="nx">sub</span><span class="p">]</span> <span class="p">,</span> <span class="p">[</span><span class="nx">opr_list</span><span class="p">.</span><span class="nx">pow</span><span class="p">]</span> <span class="p">]];</span><br />&nbsp;<br />   <span class="kd">var</span> <span class="nx">input</span> <span class="o">=</span> <span class="nx">input</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/[^0-9%^*\/()\-+.]/g</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">);</span><br />   <span class="kd">var</span> <span class="nx">output</span><span class="p">,</span><span class="nx">n</span><span class="p">;</span><br />&nbsp;<br />   <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">n</span> <span class="o">=</span> <span class="nx">opr_list</span><span class="p">.</span><span class="nx">opr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">n</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">)</span> <span class="p">{</span><br />      <span class="kd">var</span> <span class="nx">re</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">RegExp</span><span class="p">(</span><span class="s1">&#39;(\\d+\\.?\\d*)([\\&#39;</span><span class="o">+</span><span class="nx">opr_list</span><span class="p">.</span><span class="nx">opr</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;\\&#39;</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;])(\\d+\\.?\\d*)&#39;</span><span class="p">);</span><br />      <span class="nx">re</span><span class="p">.</span><span class="nx">lastIndex</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><br />      <span class="k">while</span><span class="p">(</span><span class="nx">re</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">input</span><span class="p">)</span> <span class="p">)</span> <span class="p">{</span><br />        <span class="nx">output</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">compute_result</span><span class="p">(</span><span class="nx">opr_list</span><span class="p">,</span><span class="nx">sign</span><span class="o">*</span><span class="nb">RegExp</span><span class="p">.</span><span class="nx">$1</span><span class="p">,</span><span class="nb">RegExp</span><span class="p">.</span><span class="nx">$2</span><span class="p">,</span><span class="nb">RegExp</span><span class="p">.</span><span class="nx">$3</span><span class="p">);</span><br />        <span class="k">if</span> <span class="p">(</span><span class="nb">isNaN</span><span class="p">(</span><span class="nx">output</span><span class="p">)</span> <span class="o">||</span> <span class="o">!</span><span class="nb">isFinite</span><span class="p">(</span><span class="nx">output</span><span class="p">))</span> <span class="p">{</span><br />          <span class="k">return</span> <span class="nx">output</span><span class="p">;</span><br />        <span class="p">}</span><br />        <span class="nx">input</span>  <span class="o">=</span> <span class="nx">input</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">re</span><span class="p">,</span><span class="nx">output</span><span class="p">);</span><br />      <span class="p">}</span><br />   <span class="p">}</span><br />&nbsp;<br />   <span class="k">return</span> <span class="nx">output</span><span class="p">;</span><br /><span class="p">},</span><br />&nbsp;<br /><span class="nx">compute_result</span><span class="o">:</span> <span class="kd">function</span> <span class="nx">compute_result</span> <span class="p">(</span><span class="nx">opr_list</span><span class="p">,</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">op</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span><br />  <span class="nx">a</span><span class="o">=</span><span class="nx">a</span><span class="o">*</span><span class="mi">1</span><span class="p">;</span> <span class="nx">b</span><span class="o">=</span><span class="nx">b</span><span class="o">*</span><span class="mi">1</span><span class="p">;</span><br />  <span class="k">switch</span><span class="p">(</span><span class="nx">op</span><span class="p">){</span><br />    <span class="k">case</span> <span class="nx">opr_list</span><span class="p">.</span><span class="nx">add</span><span class="o">:</span> <span class="k">return</span> <span class="nx">a</span><span class="o">+</span><span class="nx">b</span><span class="p">;</span> <span class="k">break</span><span class="p">;</span><br />    <span class="k">case</span> <span class="nx">opr_list</span><span class="p">.</span><span class="nx">sub</span><span class="o">:</span> <span class="k">return</span> <span class="nx">a</span><span class="o">-</span><span class="nx">b</span><span class="p">;</span> <span class="k">break</span><span class="p">;</span><br />    <span class="k">case</span> <span class="nx">opr_list</span><span class="p">.</span><span class="nx">div</span><span class="o">:</span> <span class="k">return</span> <span class="nx">a</span><span class="o">/</span><span class="nx">b</span><span class="p">;</span> <span class="k">break</span><span class="p">;</span><br />    <span class="k">case</span> <span class="nx">opr_list</span><span class="p">.</span><span class="nx">mlt</span><span class="o">:</span> <span class="k">return</span> <span class="nx">a</span><span class="o">*</span><span class="nx">b</span><span class="p">;</span> <span class="k">break</span><span class="p">;</span><br />    <span class="k">case</span> <span class="nx">opr_list</span><span class="p">.</span><span class="nx">mod</span><span class="o">:</span> <span class="k">return</span> <span class="nx">a</span><span class="o">%</span><span class="nx">b</span><span class="p">;</span> <span class="k">break</span><span class="p">;</span><br />    <span class="k">case</span> <span class="nx">opr_list</span><span class="p">.</span><span class="nx">pow</span><span class="o">:</span> <span class="k">return</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">pow</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">);</span> <span class="k">break</span><span class="p">;</span><br />    <span class="k">default</span><span class="o">:</span> <span class="kc">null</span><span class="p">;</span><br />  <span class="p">}</span><br /><span class="p">}</span><br /></pre></div><br /><figcaption>JavaScript</figcaption></figure></div>
+
+</div><div id="links" class="section scrollspy  push-half--top">
+
+
+<h2>About the App <a href="#links"><i class="fa fa-link  content-link"></i></a></h2>
+<p>Browse the full source code <a href="https://github.com/softvar/firefoxos-calculator" target="_blank">here</a></p>
+<p>Download the App at <a href="https://marketplace.firefox.com/app/calculator-13/">Firefox&nbsp;Marketplace</a></p>
+<p>My next <span class="caps">FOS</span>-App is coming soon&#8230;&nbsp;:)</p>
+</div>            </br>
+            <span id="twitter-share-blog-lines" style="position:absolute;top:-9999px;left:-9999px">
+              <a href="#" class="tweet__url  tooltipped" data-position="right" data-tooltip="Share on Twitter"><i class="fa  fa-twitter  fa-2x" style="width: 39px;height: 40px;background: black;padding: 6px;z-index: 10000000;" ></i></a>
+            </span>
+
+
+                  <div class="hi">
+                <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'softvar'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+              </div>
+        
+    </article>
+      </section>
+  </div>
+</div>
+
+      </div> <!--! end of #container -->
+
+              <footer>
+          Built with <i class="fa fa-heart" style="color:red;"></i> Smelted with <span class="footer_link" ><a href="http://ringce.com/hyde">hyde</a></span>
+        </footer>
+            </div>
+  
+      <!-- Javascript at the bottom for fast page loading -->
+    <script type="text/javascript">
+    $(function () {
+      $.scrollUp({
+          scrollName: 'scrollUp', // Element ID
+          scrollClass: 'tooltipped',
+          scrollDistance: 300, // Distance from top/bottom before showing element (px)
+          scrollFrom: 'top', // 'top' or 'bottom'
+          scrollSpeed: 300, // Speed back to top (ms)
+          easingType: 'linear', // Scroll to top easing (see http://easings.net/)
+          animation: 'fade', // Fade, slide, none
+          animationInSpeed: 200, // Animation in speed (ms)
+          animationOutSpeed: 200, // Animation out speed (ms)
+          scrollText: '', // Text for element, can contain HTML
+          scrollTitle: '', // Set a custom <a> title if required. Defaults to scrollText
+          scrollImg: false, // Set true to use image
+          activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+          zIndex: 2147483647, // Z-Index for the overlay
+          dataPosition: 'top',
+          dataTooltip: 'Scroll To Top'
+      });
+
+      /**
+       * Kudos Button
+       */
+      $('figure.kudo').kudoable({
+          dataStore: window.firebaseStorage
+      });
+
+
+      $('.scrollspy').scrollSpy();
+
+
+      /**
+       * Count words and calculate read time
+       */
+      var area = document.getElementById('main-countable-content');
+      Countable.once(area, function (counter) {
+        console.log(this, counter);
+         var wpm = 250,
+            estimatedRaw = counter.words / wpm,
+            minutes = Math.round(estimatedRaw);
+
+        var effectiveTime = '<span class="tooltipped" style="border-bottom: 1px solid #222;" data-position="bottom" data-tooltip="Based on an avg reading speed of 250 words per minute"><span class="blue-text text-lighten-1"><i class="fa fa-bookmark" style="color:#A3A3A3;"></i> <b>Read time:</b></span> ' + counter.words + " words - " + ((minutes < 1) ? "a couple of secs" : minutes + " min read") + '</span><div style="margin-top: -19px;font-size: 20px;"><i class="fa fa-sort-down"></i></div>';
+
+        $('.reading-time').html(effectiveTime);;
+      });
+
+      var selection,
+          TWITTER_BASE_URI = 'https://twitter.com/share?',
+          tweetVia = 's0ftvar',
+          tweetUrl =  $('.tweetShortUrl').text(),
+          tweetText = '',
+          tweetHref = '';
+
+
+      function popItUp() {
+        var width, height, top, left;
+        left = ($(window).width() - 575)  / 2;
+        top = ($(window).height() - 300)  / 2;
+        newwindow = window.open(tweetHref, 'name', 'height=300,width=575,left='+left+',top='+top);
+        if (window.focus) {
+          newwindow.focus();
+        }
+        return false;
+      }
+      function hideTwitterShare() {
+        $('#twitter-share-blog-lines').css({top: '-9999px', left: '-9999px'});
+      }
+
+      $('.tweet__url').on('click', function () {
+        popItUp();
+        hideTwitterShare();
+      });
+
+      $('#main-countable-content').bind('mouseup', function(e){
+
+        if (window.getSelection) {
+          selection = window.getSelection();
+        } else if (document.selection) {
+          selection = document.selection.createRange();
+        }
+
+        // subtract @s0ftvar [link] length
+        if (selection && selection.toString().trim() !== '' && selection.toString().length && (selection.toString().length < 140) && $('#twitter-share-blog-lines').css('top') === '-9999px') {
+          tweetText = selection;
+          tweetHref = TWITTER_BASE_URI + 'text=' + tweetText + '&url=' + tweetUrl + '&via=' + tweetVia;
+
+          $('#twitter-share-blog-lines').css({top: e.pageY + 'px', left: e.pageX + 'px'});
+        }
+      });
+
+    //$('.tooltipped').tooltip({"delay": 50});
+
+    });
+  </script>
+
+            <!--[if lt IE 7 ]>
+      <script src="js/libs/dd_belatedpng.js"></script>
+      <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+    <![endif]-->
+          
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43718849-1', 'softvar.github.io');
+  ga('send', 'pageview');
+
+</script>
+<!-- Start Visual Website Optimizer Asynchronous Code -->
+<script type='text/javascript'>
+    var _vwo_code=(function(){
+    var account_id=60781,
+    settings_tolerance=2000,
+    library_tolerance=2500,
+    use_existing_jquery=false,
+    // DO NOT EDIT BELOW THIS LINE
+    f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+</script>
+<!-- End Visual Website Optimizer Asynchronous Code -->
+
+    
+          <script src="/media/js/libs/materialize.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        var lastTopTwitterShareBtn, currentTopTwitterBtn;
+
+        $('.tooltipped').tooltip({"delay": 50});
+        $('.slider').slider({height: 210, indicators: false, transition: 2000, interval: 5000});
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+
+        $('#sidebar-nav').sidr();
+        $('body').on('click', '.all-body-click-region', function() {
+          //$('.toc').fadeIn();
+          $.sidr('close');
+          currentTopTwitterBtn = $('#twitter-share-blog-lines').css('top');
+          if (lastTopTwitterShareBtn && lastTopTwitterShareBtn == currentTopTwitterBtn && currentTopTwitterBtn != '-9999px') {
+            console.log($('#twitter-share-blog-lines').css({'top': '-9999px', 'left': '-9999px'}))
+          }
+          lastTopTwitterShareBtn = currentTopTwitterBtn;
+        });
+      });
+    </script>
+  </body>
+</html>

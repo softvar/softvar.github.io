@@ -1,0 +1,508 @@
+<!doctype html>
+<!-- https://github.com/paulirish/html5-boilerplate/blob/master/index.html -->
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="">
+
+  <!-- encoding must be specified within the first 512 bytes
+        www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html#charset -->
+
+  <!-- meta element for compatibility mode needs to be before
+        all elements except title & meta
+        msdn.microsoft.com/en-us/library/cc288325(VS.85).aspx -->
+  <!-- Chrome Frame is only invoked if meta element for
+        compatibility mode is within the first 1K bytes
+        code.google.com/p/chromium/issues/detail?id=23003 -->
+
+  <title>Getting Started with Hyde</title>
+  <meta name="description" content="Smile. Laugh.
+">
+  <meta name="author" content="Varun Malhotra">
+
+  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="">
+
+    <!-- Place favicon.ico & apple-touch-icon.png
+        in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/media/favicon.ico">
+  <!-- <link rel="apple-touch-icon" href="/media/apple-touch-icon.png"> -->
+  
+    <link rel="stylesheet" type="text/css" href="/media/css/materialize.css">
+  <link rel="stylesheet" type="text/css" href="/media/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="/media/css/jquery.sidr.dark.css">
+
+    <link rel="stylesheet" href="/media/css/kudos.min.css">
+
+  <link rel="stylesheet" href="/media/css/site.css">
+  <link rel="stylesheet" href="/media/css/syntax.css">
+
+  <!-- Add custom CSS here -->
+  <link rel="stylesheet" type="text/css" href="/media/css/custom.css">
+  
+    <!-- All JavaScript at the bottom, except for Modernizr which
+        enables HTML5 elements & feature detects -->
+    <script src="/media/js/libs/jquery.min.js"></script>
+    <script src="/media/js/libs/jquery.sidr.min.js"></script>
+    <script src="/media/js/libs/modernizr-1.7.min.js"></script>
+    <script src="/media/js/libs/jquery.scrollUp.min.js"></script>
+    <script type="text/javascript" src="https://github.com/Dogfalo/materialize/blob/master/dist/js/materialize.min.js"></script>
+    <!-- <script src="/media/js/libs/no-crack.js"></script> -->
+
+
+      <!-- Kudos script -->
+  <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.1.2/firebase.js'></script>
+  <script type="text/javascript" src="/media/js/libs/kudos.min.js"></script>
+  <script type="text/javascript" src="/media/js/libs/kudos.firebase.min.js"></script>
+  <script type="text/javascript" src="/media/js/libs/countable.js"></script>
+  <script type="text/javascript" src="/media/js/libs/moment.min.js"></script>
+<!--   // <script type="text/javascript" src="/media/js/libs/no-crack.js"></script> -->
+</head>
+<body id="hyde">
+
+  
+
+      <div class="topbar">
+              <div class="fixed-topbar  pull--right">
+          <div class="social-links" style="margin-right:50px;margin-top:25px;">
+            <a href="http://twitter.com/s0ftvar" target="_blank" ><i class="fa  fa-twitter  fa-2x" title="Twitter" ></i></a>
+            <a href="http://github.com/softvar" target="_blank" ><i class="fa  fa-github  fa-2x " title="Github"></i></a>
+            <a href="http://www.linkedin.com/pub/varun-malhotra/71/a14/131" target="_blank" ><i class="fa  fa-linkedin  fa-2x" title="LinkedIn" ></i></a>
+          </div>
+        </div>
+            </div>
+
+    <div class="side-nav-button">
+      <a id="sidebar-nav" class="tooltipped" href="#sidr" data-position="right" data-tooltip="Open side navbar">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div id="sidr">
+      <div class="container" style="margin-top:30px;width:90%;">
+        <div class="slider">
+          <ul class="slides">
+            <li>
+             <img class="circle  responsive-img  dude-pic" src="/media/img/me__1.jpg">
+            </li>
+            <li>
+              <img class="circle  responsive-img  dude-pic" src="/media/img/me__2.jpg">
+            </li>
+            <li>
+              <img class="circle  responsive-img  dude-pic" src="/media/img/me__4.jpg">
+            </li>
+          </ul>
+          <div style="text-align:center;">Varun Malhotra</div>
+        </div>
+        <div class="" id="social-icons">
+          <a href="http://www.linkedin.com/pub/varun-malhotra/71/a14/131" target="_blank" ><i class="fa  fa-linkedin  fa-2x " title="LinkedIn" ></i></a>
+          <a href="http://twitter.com/s0ftvar" target="_blank" ><i class="fa  fa-twitter  fa-2x " title="Twitter" ></i></a>
+          <a href="http://stackoverflow.com/users/2494535/varun-malhotra" target="_blank" ><i class="fa  fa-stack-overflow  fa-2x " title= "Stackoverflow"></i></a>
+          <a href="http://github.com/softvar" target="_blank" ><i class="fa  fa-github  fa-2x " title="Github"></i></a>
+        </div>
+      </div>
+      <div class="side-navbar">
+        <ul style="margin-top:50px;">
+          <li><a href="/" class="side--home"><i class="fa fa-home fa-2x"></i> Home</a></li>
+          <li  class="active"><a href="/blog"><i class="fa fa-terminal fa-2x"></i> Blog</a></li>
+          <li ><a href="/archive" class="side--archive"><i class="fa fa-archive fa-2x"></i> Archive</a></li>
+          <li ><a href="/portfolio" class="side--projects"><i class="fa fa-code fa-2x"></i> Projects</a></li>
+          <li ><a href="/about" class="side--about"><i class="fa fa-home fa-2x"></i> About</a></li>
+          <li ><a href="/contact" class="side--contact"><i class="fa fa-send fa-2x"></i> Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+      <div class="all-body-click-region"  style="margin-top:-20px;" >
+            
+
+        <div class="container"  style="width:75%;" >
+<span class="tweetShortUrl" style="display:none;">https://bit.ly/1zWUotn</span>
+    <div id="main" role="main" class="row">
+      <!-- Show Table of contents for blog posts, if available -->
+            <div class="col s2">
+          <div style="margin-top:400px;">
+            <div style="">
+              <ul class="section table-of-contents" style="margin-top:200px;">
+                <li style="color:#222;font-weight:bold;padding-bottom:5px;">Table of Contents</li>
+                                  <li><a href="#introduction">Introduction</a></li>
+                                  <li><a href="#installation">Installation</a></li>
+                                  <li><a href="#yaml">Yaml</a></li>
+                                  <li><a href="#markdown">Markdown</a></li>
+                                  <li><a href="#syntax--highlight">Syntax Highlight</a></li>
+                                  <li><a href="#templating">Templating</a></li>
+                                  <li><a href="#layout">Layout</a></li>
+                                  <li><a href="#content">Content</a></li>
+                              </ul>
+            </div>
+          </div>
+      </div>
+            <br/>
+    <section  class="content col s10" >
+
+    
+      <script type="text/javascript">
+        // Floating-Fixed table of contents
+        $(function() {
+
+          setTimeout(function () {
+            if ($('.table-of-contents').length) {
+              if ($('.table-of-contents').length) {
+                var toc_offset = $('.table-of-contents').first().offset().top;
+                console.log(toc_offset)
+                $('.table-of-contents').each(function() {
+                  var origin = $(this);
+                  origin.pushpin({ top: toc_offset-200, bottom: $(document).height() - window.innerHeight });
+                });
+              }
+            }
+          }, 200);
+        });
+      </script>
+      
+      <h1 class="title">
+          <a href="/blog/2013/06/hyde.html">
+              Getting Started with Hyde
+          </a>
+      </h1>
+      <div class="row" style="margin-top:50px;">
+        <div class="col offset-s2 s6 vertical-center">
+          <img class="circle  responsive-img  blog-dude-pic  materialboxed" data-caption="Me building the next generation software at Wingify, India :)" src="/media/img/me__2.jpg">
+          <time datetime="2013-06-04" class="grey-text" style="margin-left:5px;">
+              <b><i><a href="/about">Varun</a></i></b> wrote this on Tue, 04 Jun 2013
+          </time>
+        </div>
+        <div class="col offset-s1 s1">
+          <figure class="kudo"  style="margin-top:0px;" ></figure>
+        </div>
+      </div>
+
+      <div class="reading-time grey-text" style="text-align:center"></div>
+      <article class="post" id="main-countable-content">
+        <p>A will for creating a personal portfolio cum blog site, after spending a lot of time researching and experimenting with various frameworks, came to an end with this. I&#8217;m glad to discuss my experience with a new open-source technology, smelting this site, <a href="http://hyde.com" title="HYDE's official site"><span class="caps">HYDE</span></a>. <span class="caps">HYDE</span>&#8217;s built-in web server + auto-generator provide instant refresh and unlimited flexibility. No database, no slowness, no&nbsp;digg-effect.</p>
+<div id="introduction" class="section scrollspy  push-half--top">
+
+
+<h2>Why <span class="caps">HYDE</span> <a href="#introduction"><i class="fa fa-link  content-link"></i></a></h2>
+<p>It saves a lot of considerable amount of time rather writing from the scratch. It&#8217;s built-in features and plug-ins inspired me to work with it. After satisfying the requirements for the <span class="caps">HYDE</span> environment to be set up, it&#8217;s hardly a matter of few seconds to have a full-structured working site on your local web server. You&#8217;ll greatly appreciate the amount of time spent in serving up when you&#8217;ll read about integrating your work with Fabric below, that even these few seconds can be reduced to merely a second, Yep! just a single command to have your website cum blog serving up. Isn&#8217;t it interesting? Yeah, Carry&nbsp;on!</p>
+</div><div id="installation" class="section scrollspy  push-half--top">
+
+
+<h2>Installation and Setup <a href="#installation"><i class="fa fa-link  content-link"></i></a></h2>
+<p><strong>using python-pip for&nbsp;installing</strong></p>
+<div class="codebox"><figure class="code"><div class="highlight"><pre>pip install hyde<br /></pre></div><br /><figcaption>Bash</figcaption></figure></div>
+
+<p><strong>Creating a new hyde website (default layout for&nbsp;site)</strong></p>
+<div class="codebox"><figure class="code"><div class="highlight"><pre>hyde -s <span class="nv">$PATH_TO_DIRECTORY</span> create<br /><span class="c"># or</span><br /><span class="nb">cd</span> <span class="s1">&#39;PATH_TO_DIRECTORY&#39;</span> <span class="c"># change to dir</span><br />hyde create               <span class="c"># and create default layout</span><br />&nbsp;<br /><span class="c"># if you switch to created/cw directory, following subdirectories would be created.</span><br />ls<br />content  info.yaml  layout  <span class="caps">README</span>.markdown  site.yaml<br /></pre></div><br /><figcaption>Bash</figcaption></figure></div>
+
+<h4>Generating&nbsp;Site</h4>
+<p>After editing and modifying the layout, site is&nbsp;generated</p>
+<div class="codebox"><figure class="code"><div class="highlight"><pre>hyde gen  <span class="c"># will create a folder named &#39;deploy&#39; inside current dir</span><br /></pre></div><br /><figcaption>Bash</figcaption></figure></div>
+
+<p><strong>Serve the site</strong>
+Finally start the built in web server that also regenerates based on the request if there are changes.
+<div class="codebox"><figure class="code"><div class="highlight"><pre>hyde serve<br /></pre></div><br /><figcaption>Bash</figcaption></figure></div></p>
+<p><strong>Publish the site</strong>
+Publishes the site based on configuration. Currently the only supported publishing target is a git repository.
+<div class="codebox"><figure class="code"><div class="highlight"><pre>hyde publish -p github<br /></pre></div><br /><figcaption>Bash</figcaption></figure></div></p>
+<div class="codebox"><figure class="code"><div class="highlight"><pre><span class="l-Scalar-Plain">publisher</span><span class="p-Indicator">:</span><br />    <span class="l-Scalar-Plain">github</span><span class="p-Indicator">:</span><br />        <span class="l-Scalar-Plain">type</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">hyde.ext.publishers.dvcs.Git</span><br />        <span class="l-Scalar-Plain">path</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">../hyde.github.com</span><br />        <span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">git@github.com:hyde/hyde.github.com.git</span><br /></pre></div><br /><figcaption><span class="caps">YAML</span></figcaption></figure></div>
+
+<p>The above steps i.e removing <em>deploy</em> dir, generating and serving can be combined under one hood, using python awesome library <a href="http://docs.fabfile.org/en/1.6/">fabric</a>. It&#8217;s a command-line tool and it provides a basic suite of operations for executing local or remote shell commands (normally or via sudo) and uploading/downloading&nbsp;files.</p>
+<p>Not many people enjoy executing a series of line-by-line commands, which they require frequently. Fabric is thus, very useful when you have to execute a series of commands, without waiting to run next upon completion of&nbsp;former.</p>
+<div class="codebox"><figure class="code"><div class="highlight"><pre><span class="c">#!/usr/bin</span><br /><span class="c"># fabfile.py</span><br />&nbsp;<br /><span class="kn">from</span> <span class="nn">fabric.api</span> <span class="kn">import</span> <span class="o">*</span><br /><span class="kn">import</span> <span class="nn">fabric.contrib.project</span> <span class="kn">as</span> <span class="nn">project</span><br />&nbsp;<br /><span class="k">def</span> <span class="nf">clean</span><span class="p">():</span><br />  <span class="n">local</span><span class="p">(</span><span class="s">&#39;rm -rf ./deploy&#39;</span><span class="p">)</span><br />&nbsp;<br /><span class="k">def</span> <span class="nf">gen</span><span class="p">():</span><br />  <span class="n">clean</span><span class="p">()</span><br />  <span class="n">local</span><span class="p">(</span><span class="s">&#39;hyde gen&#39;</span><span class="p">)</span><br />&nbsp;<br /><span class="k">def</span> <span class="nf">serve</span><span class="p">():</span><br />  <span class="n">local</span><span class="p">(</span><span class="s">&#39;hyde serve&#39;</span><span class="p">)</span><br />&nbsp;<br /><span class="k">def</span> <span class="nf">cgs</span><span class="p">():</span><br />  <span class="n">gen</span><span class="p">()</span><br />  <span class="n">serve</span><span class="p">()</span><br /></pre></div><br /><figcaption>Python</figcaption></figure></div>
+
+<div class="codebox"><figure class="code"><div class="highlight"><pre>fab clean <span class="c"># removes the deploy dir build during generation</span><br />fab cgs   <span class="c"># cleaning, re-generating and serving</span><br /></pre></div><br /><figcaption>Bash</figcaption></figure></div>
+
+</div><div id="yaml" class="section scrollspy  push-half--top">
+
+
+<h2><span class="caps">YAML</span> <a href="#yaml"><i class="fa fa-link  content-link"></i></a></h2>
+<p><strong><span class="caps">YAML</span>: <span class="caps">YAML</span> Ain&#8217;t Markup&nbsp;Language</strong></p>
+<p><span style="text-decoration: underline;">What It Is:</span> <span class="caps">YAML</span> is a human friendly data serialization standard for all programming languages. It is used for configuration files. <a href="http://hyde.com" title="HYDE's official site"><span class="caps">HYDE</span></a> provides control of how templates are applied, using <span class="caps">YAML</span> for configuration&nbsp;settings.</p>
+<p><em>site.yaml</em> indicates how some local file directories are translated to paths for the web server, specifies plug-ins to be used like &#8216;<em>meta.TaggerPlugin</em>&#8216;, &#8216;<em>text.SyntextPlugin</em>&#8216;, etc. and provides basic&nbsp;metadata.</p>
+</div><div id="markdown" class="section scrollspy  push-half--top">
+
+
+<h2>Markdown <a href="#markdown"><i class="fa fa-link  content-link"></i></a></h2>
+<p><span class="caps">HYDE</span> builds in a processor that allows you to author web pages in Markdown rather than <span class="caps">HTML</span>. Markdown is a lightweight markup language, which helps in avoiding hand-authoring <span class="caps">HTML</span>, and edit just plain text using special characters to indicate the various <span class="caps">HTML</span> markup constructs, and finally converts that plain text formatting to&nbsp;<span class="caps">HTML</span>.</p>
+<p>Since this was my first experience creating website, i found Markdown simply awsesome to learn and use. It reduces my lots of <span class="caps">HTML</span>-coding efforts and helps me writing my blog-posts similar to the way i usually wrote an essay in school&nbsp;:)</p>
+<p>I won&#8217;t be undertaking an introduction to <a href="http://daringfireball.net/projects/markdown/">Markdown</a>, but can provide a simple example to grab on&nbsp;it.</p>
+<div class="codebox"><figure class="code"><div class="highlight"><pre>Intro<br />=====<br />Section 1<br />---------<br />The **dream** is not *what you see in sleep*,<br />&nbsp;<br />**dream** is the thing which does not __let you sleep__.<br />&nbsp;<br />--[Anonymous](#)<br />&nbsp;<br />##Three simple steps to succeed<br />1. Knowledge<br />2. Determination<br />3. The Means<br /></pre></div><br /><figcaption>Text only</figcaption></figure></div>
+
+<p>will be converted to&nbsp;:</p>
+<div class="codebox"><figure class="code"><div class="highlight"><pre><span class="nt">&lt;h1&gt;</span>Intro<span class="nt">&lt;/h1&gt;</span><br />&nbsp;<br /><span class="nt">&lt;h2&gt;</span>Section 1<span class="nt">&lt;/h2&gt;</span><br />&nbsp;<br /><span class="nt">&lt;p&gt;</span>The <span class="nt">&lt;strong&gt;</span>dream<span class="nt">&lt;/strong&gt;</span> is not <span class="nt">&lt;em&gt;</span>what you see in sleep<span class="nt">&lt;/em&gt;</span>,<span class="nt">&lt;/p&gt;</span><br />&nbsp;<br /><span class="nt">&lt;p&gt;&lt;strong&gt;</span>dream<span class="nt">&lt;/strong&gt;</span> is the thing which does not <span class="nt">&lt;strong&gt;</span>let you sleep<span class="nt">&lt;/strong&gt;</span>.<span class="nt">&lt;/p&gt;</span><br />&nbsp;<br /><span class="nt">&lt;p&gt;</span>--<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Anonymous<span class="nt">&lt;/a&gt;&lt;/p&gt;</span><br />&nbsp;<br /><span class="nt">&lt;h2&gt;</span>Three simple steps to succeed<span class="nt">&lt;/h2&gt;</span><br />&nbsp;<br /><span class="nt">&lt;ol&gt;</span><br />  <span class="nt">&lt;li&gt;</span>Knowledge<span class="nt">&lt;/li&gt;</span><br />  <span class="nt">&lt;li&gt;</span>Determination<span class="nt">&lt;/li&gt;</span><br />  <span class="nt">&lt;li&gt;</span>The Means<span class="nt">&lt;/li&gt;</span><br /><span class="nt">&lt;/ol&gt;</span><br /></pre></div><br /><figcaption><span class="caps">HTML</span></figcaption></figure></div>
+
+<p>You can try it out online <strong><a href="http://daringfireball.net/projects/markdown/dingus">Dingus</a></strong></p>
+</div><div id="syntax--highlight" class="section scrollspy  push-half--top">
+
+
+<h2><span class="caps">HYDE</span> Syntax Highlighting Plugin <a href="#syntax--highlight"><i class="fa fa-link  content-link"></i></a></h2>
+<p>Ah, <span class="caps">HYDE</span>&#8217;s built-in plugin <a href="">Pygments</a> and syntax tag for Syntax Highlighting is just beautiful. It not only makes the code readable but also push <strong><span style="color:#F92672;">colour</span>ful</strong> pixels to your site. Put the following code along with your <strong>Markdown</strong> code <em>(as discussed above)</em> to enjoy the Syntax Highlighting for several programming&nbsp;languages.</p>
+<p>Replace &#8216;lang_name&#8217; in the code below with the programming language in order to highlight its syntax. For eg- css, <span class="caps">HTML</span>, python, etc. Here lang_name corresponds to <strong>python</strong>.</p>
+<div class="codebox"><figure class="code"><div class="highlight"><pre><span class="cp">{%</span> <span class="k">syntax</span> <span class="nv">lang_name</span> <span class="cp">%}</span><span class="x"></span><br /><span class="x">  def main():</span><br /><span class="x">    print(&quot;Hello World!&quot;);</span><br /><span class="cp">{%</span> <span class="k">endsyntax</span> <span class="cp">%}</span><span class="x"></span><br /></pre></div><br /><figcaption>Django/Jinja</figcaption></figure></div>
+
+</div><div id="templating" class="section scrollspy  push-half--top">
+
+
+<h2>Templates and Jinja2<a href="#templating"><i class="fa fa-link  content-link"></i></a></h2>
+<p>A template is simply a text file. It can generate any text-based format (<span class="caps">HTML</span>, <span class="caps">XML</span>, <span class="caps">CSV</span>,&nbsp;etc.).</p>
+<p>A template contains variables, which get replaced with values when the template is evaluated, and tags, which control the logic of the&nbsp;template.</p>
+<p>Jinja2 is a modern and designer friendly templating language for Python, modelled after Django’s templates. It is fast, widely used and secure with the optional sandboxed template execution&nbsp;environment.</p>
+<p>The templates go in the <em>layout</em> directory, and you add and update templates there to manipulate the overall content outline of your&nbsp;site.</p>
+<p>Below is a minimal template that illustrates a few&nbsp;basics.</p>
+<div class="codebox"><figure class="code"><div class="highlight"><pre><span class="x">&lt;html&gt;</span><br /><span class="x">&lt;head&gt;</span><br /><span class="x">  </span><span class="cp">{%</span> <span class="k">block</span> <span class="nv">head</span> <span class="cp">%}</span><span class="x"></span><br /><span class="x">      &lt;link rel=&quot;stylesheet&quot; href=</span><span class="cp">{{</span> <span class="nv">media_url</span><span class="o">(</span><span class="s1">&#39;css/site.css&#39;</span><span class="o">)</span> <span class="cp">}}</span><span class="x">&gt;</span><br /><span class="x">      </span><span class="cp">{%</span> <span class="k">block</span> <span class="nv">title</span> <span class="cp">%}{{</span> <span class="nv">section.title</span> <span class="cp">}}{%</span> <span class="k">endblock</span> <span class="cp">%}</span><span class="x"></span><br /><span class="x">  </span><span class="cp">{%</span> <span class="k">endblock</span> <span class="cp">%}</span><span class="x"></span><br /><span class="x">&lt;/head&gt;</span><br /><span class="x">&lt;body&gt;</span><br /><span class="x">  &lt;ul id=&quot;navigation&quot;&gt;</span><br /><span class="x">     </span><span class="cp">{%</span> <span class="k">for</span> <span class="nv">item</span> <span class="k">in</span> <span class="nv">navigation</span> <span class="cp">%}</span><span class="x"></span><br /><span class="x">          &lt;li&gt;&lt;a href=&quot;{item.href}&quot;&gt;</span><span class="cp">{{</span><span class="nv">item.caption</span><span class="cp">}}</span><span class="x">&lt;/a&gt;&lt;/li&gt;</span><br /><span class="x">     </span><span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span><span class="x"></span><br /><span class="x">  &lt;/ul&gt;</span><br />&nbsp;<br /><span class="x">  </span><span class="cp">{%</span> <span class="k">block</span> <span class="nv">content</span> <span class="cp">%}</span><span class="x"></span><br /><span class="x">    </span><span class="cp">{{</span> <span class="nb">super</span><span class="o">()</span> <span class="cp">}}</span><span class="x"> # inheriting from parent/base</span><br /><span class="x">  </span><span class="cp">{%</span> <span class="k">endblock</span> <span class="nv">content</span> <span class="cp">%}</span><span class="x"></span><br />&nbsp;<br /><br /><span class="x">  </span><span class="cp">{%</span> <span class="k">block</span> <span class="nv">footer</span> <span class="cp">%}</span><span class="x"></span><br /><span class="x">      &amp;copy; Copyright 2008 by &lt;a href=&quot;http://domain.invalid/&quot;&gt;you&lt;/a&gt;.</span><br /><span class="x">  </span><span class="cp">{%</span> <span class="k">endblock</span> <span class="nv">footer</span> <span class="cp">%}</span><span class="x"></span><br />&nbsp;<br /><span class="x">&lt;/body&gt;</span><br /><span class="x">&lt;/html&gt;</span><br /></pre></div><br /><figcaption>Django/Jinja</figcaption></figure></div>
+
+<p>Full documentation can be found on <a href="http://jinja.pocoo.org/docs/templates/">Jinja2&nbsp;Docs</a></p>
+<p>I found this <em>template</em> engine quite interesting to use. A template allows to express most of the replicated entries in each <span class="caps">HTML</span> page only once, which is often called as <strong>base template</strong> of the whole site, and is automatically applied to all the pages which inherit them, often called as <strong>child template</strong>.</p>
+</div><div id="layout" class="section scrollspy  push-half--top">
+
+
+<h2>Layout <a href="#layout"><i class="fa fa-link  content-link"></i></a></h2>
+<div id="hyde-layout">
+<i class="fa fa-folder-open" style="color:#99BBD6;font-size:30px;"></i><span style="font-size:20px;"> content</span><br />
+
+<div id="sub-folder">
+<i class="fa fa-folder-open" style="color:#99BBD6;"></i>blog<br />
+
+<div id="sub-folder">
+<i class="fa fa-folder-open" style="color:#99BBD6;"></i>tags<br />
+<i class="fa fa-file" style="color:#444444;"></i> index.yaml<br />
+<i class="fa fa-file" style="color:#444444;"></i> meta.yaml<br />
+</div>
+
+<i class="fa fa-folder-open" style="color:#99BBD6;"></i>media<br />
+
+<div id="sub-folder">
+<i class="fa fa-folder-open" style="color:#99BBD6;"></i>css<br />
+<i class="fa fa-folder-open" style="color:#99BBD6;"></i>images<br />
+<i class="fa fa-folder-open" style="color:#99BBD6;"></i>js<br />
+<i class="fa fa-file" style="color:#444444;"></i>meta.yaml<br />
+</div>
+
+<i class="fa fa-folder-open" style="color:#99BBD6;"></i>portfolio<br />
+
+<div id="sub-folder">
+<i class="fa fa-file" style="color:#444444;"></i> index.html<br />
+</div>
+
+<i class="fa fa-file" style="color:#444444;"></i> about.html<br />
+<i class="fa fa-file" style="color:#444444;"></i> favocin.ico<br />
+<i class="fa fa-file" style="color:#444444;"></i> index.html<br />
+</div>
+
+<p><i class="fa fa-folder-open" style="color:#99BBD6;font-size:30px;"></i> deploy<br />
+<i class="fa fa-folder-open" style="color:#99BBD6;font-size:30px;"></i> layout<br /></p>
+<div id="sub-folder">
+<i class="fa fa-file" style="color:#444444;"></i> analytics.j2<br />
+<i class="fa fa-file" style="color:#444444;"></i> atom.j2<br />
+<i class="fa fa-file" style="color:#444444;"></i> base.j2<br />
+<i class="fa fa-file" style="color:#444444;"></i> blog.j2<br />
+<i class="fa fa-file" style="color:#444444;"></i> devmode.j2<br />
+<i class="fa fa-file" style="color:#444444;"></i> listing.j2<br />
+<i class="fa fa-file" style="color:#444444;"></i> macros.j2<br />
+<i class="fa fa-file" style="color:#444444;"></i> tagged_posts.j2<br />
+</div>
+
+<p><i class="fa fa-file" style="color:#444444;"></i> info.yaml<br />
+<i class="fa fa-file" style="color:#444444;"></i> <span class="caps">README</span>.markdown<br />
+<i class="fa fa-file" style="color:#444444;"></i> site.yaml<br /></p>
+</div>
+
+</div><div id="content" class="section scrollspy  push-half--top">
+
+
+<h2>Content <a href="#content"><i class="fa fa-link  content-link"></i></a></h2>
+<p>This is the directory where static files such as images, stylsheets and script-files are stored in order to serve the site. This folder is the foundation for providing the structure to the site. <span class="caps">HTML</span> page files starts with the page metadata and then inherit the code (<em>as stored in jinja files with .j2 ext </em>) from the <em>layout</em>&nbsp;directory.</p>
+</div>            </br>
+            <span id="twitter-share-blog-lines" style="position:absolute;top:-9999px;left:-9999px">
+              <a href="#" class="tweet__url  tooltipped" data-position="right" data-tooltip="Share on Twitter"><i class="fa  fa-twitter  fa-2x" style="width: 39px;height: 40px;background: black;padding: 6px;z-index: 10000000;" ></i></a>
+            </span>
+
+
+                  <div class="hi">
+                <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'softvar'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+              </div>
+        
+    </article>
+      </section>
+  </div>
+</div>
+
+      </div> <!--! end of #container -->
+
+              <footer>
+          Built with <i class="fa fa-heart" style="color:red;"></i> Smelted with <span class="footer_link" ><a href="http://ringce.com/hyde">hyde</a></span>
+        </footer>
+            </div>
+  
+      <!-- Javascript at the bottom for fast page loading -->
+    <script type="text/javascript">
+    $(function () {
+      $.scrollUp({
+          scrollName: 'scrollUp', // Element ID
+          scrollClass: 'tooltipped',
+          scrollDistance: 300, // Distance from top/bottom before showing element (px)
+          scrollFrom: 'top', // 'top' or 'bottom'
+          scrollSpeed: 300, // Speed back to top (ms)
+          easingType: 'linear', // Scroll to top easing (see http://easings.net/)
+          animation: 'fade', // Fade, slide, none
+          animationInSpeed: 200, // Animation in speed (ms)
+          animationOutSpeed: 200, // Animation out speed (ms)
+          scrollText: '', // Text for element, can contain HTML
+          scrollTitle: '', // Set a custom <a> title if required. Defaults to scrollText
+          scrollImg: false, // Set true to use image
+          activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+          zIndex: 2147483647, // Z-Index for the overlay
+          dataPosition: 'top',
+          dataTooltip: 'Scroll To Top'
+      });
+
+      /**
+       * Kudos Button
+       */
+      $('figure.kudo').kudoable({
+          dataStore: window.firebaseStorage
+      });
+
+
+      $('.scrollspy').scrollSpy();
+
+
+      /**
+       * Count words and calculate read time
+       */
+      var area = document.getElementById('main-countable-content');
+      Countable.once(area, function (counter) {
+        console.log(this, counter);
+         var wpm = 250,
+            estimatedRaw = counter.words / wpm,
+            minutes = Math.round(estimatedRaw);
+
+        var effectiveTime = '<span class="tooltipped" style="border-bottom: 1px solid #222;" data-position="bottom" data-tooltip="Based on an avg reading speed of 250 words per minute"><span class="blue-text text-lighten-1"><i class="fa fa-bookmark" style="color:#A3A3A3;"></i> <b>Read time:</b></span> ' + counter.words + " words - " + ((minutes < 1) ? "a couple of secs" : minutes + " min read") + '</span><div style="margin-top: -19px;font-size: 20px;"><i class="fa fa-sort-down"></i></div>';
+
+        $('.reading-time').html(effectiveTime);;
+      });
+
+      var selection,
+          TWITTER_BASE_URI = 'https://twitter.com/share?',
+          tweetVia = 's0ftvar',
+          tweetUrl =  $('.tweetShortUrl').text(),
+          tweetText = '',
+          tweetHref = '';
+
+
+      function popItUp() {
+        var width, height, top, left;
+        left = ($(window).width() - 575)  / 2;
+        top = ($(window).height() - 300)  / 2;
+        newwindow = window.open(tweetHref, 'name', 'height=300,width=575,left='+left+',top='+top);
+        if (window.focus) {
+          newwindow.focus();
+        }
+        return false;
+      }
+      function hideTwitterShare() {
+        $('#twitter-share-blog-lines').css({top: '-9999px', left: '-9999px'});
+      }
+
+      $('.tweet__url').on('click', function () {
+        popItUp();
+        hideTwitterShare();
+      });
+
+      $('#main-countable-content').bind('mouseup', function(e){
+
+        if (window.getSelection) {
+          selection = window.getSelection();
+        } else if (document.selection) {
+          selection = document.selection.createRange();
+        }
+
+        // subtract @s0ftvar [link] length
+        if (selection && selection.toString().trim() !== '' && selection.toString().length && (selection.toString().length < 140) && $('#twitter-share-blog-lines').css('top') === '-9999px') {
+          tweetText = selection;
+          tweetHref = TWITTER_BASE_URI + 'text=' + tweetText + '&url=' + tweetUrl + '&via=' + tweetVia;
+
+          $('#twitter-share-blog-lines').css({top: e.pageY + 'px', left: e.pageX + 'px'});
+        }
+      });
+
+    //$('.tooltipped').tooltip({"delay": 50});
+
+    });
+  </script>
+
+            <!--[if lt IE 7 ]>
+      <script src="js/libs/dd_belatedpng.js"></script>
+      <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+    <![endif]-->
+          
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43718849-1', 'softvar.github.io');
+  ga('send', 'pageview');
+
+</script>
+<!-- Start Visual Website Optimizer Asynchronous Code -->
+<script type='text/javascript'>
+    var _vwo_code=(function(){
+    var account_id=60781,
+    settings_tolerance=2000,
+    library_tolerance=2500,
+    use_existing_jquery=false,
+    // DO NOT EDIT BELOW THIS LINE
+    f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+</script>
+<!-- End Visual Website Optimizer Asynchronous Code -->
+
+    
+          <script src="/media/js/libs/materialize.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        var lastTopTwitterShareBtn, currentTopTwitterBtn;
+
+        $('.tooltipped').tooltip({"delay": 50});
+        $('.slider').slider({height: 210, indicators: false, transition: 2000, interval: 5000});
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+
+        $('#sidebar-nav').sidr();
+        $('body').on('click', '.all-body-click-region', function() {
+          //$('.toc').fadeIn();
+          $.sidr('close');
+          currentTopTwitterBtn = $('#twitter-share-blog-lines').css('top');
+          if (lastTopTwitterShareBtn && lastTopTwitterShareBtn == currentTopTwitterBtn && currentTopTwitterBtn != '-9999px') {
+            console.log($('#twitter-share-blog-lines').css({'top': '-9999px', 'left': '-9999px'}))
+          }
+          lastTopTwitterShareBtn = currentTopTwitterBtn;
+        });
+      });
+    </script>
+  </body>
+</html>
