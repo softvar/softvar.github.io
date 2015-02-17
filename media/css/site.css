@@ -601,9 +601,15 @@ article.post img{
     margin-bottom: 24px;
     height: 200px;
 }
+
 article.post a:hover {
   border-bottom: 1px solid #f00;
   transition: all 0.2s ease 0.2s;
+}
+
+article.post a.disabled {
+  border: 0;
+  color: #aaa;
 }
 
 .read_more a{
