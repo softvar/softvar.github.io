@@ -7,16 +7,16 @@
         <link href="/"/>
     
         
-    <updated>2015-02-18T01:20:07Z</updated>
+    <updated>2015-03-02T01:57:48Z</updated>
 
     <id>/blog/atom.xml/</id>
 
             <entry>
-            <title type="html">Redesigned website using material design</title>
+            <title type="html">Redesigned website using Material Design</title>
             <author><name>Varun Malhotra</name></author>
             <link href="/blog/2015/02/redesigned-theme-using-materiaize.html"/>
-            <updated>2015-02-10T01:40:00Z</updated>
-            <published>2015-02-10T01:40:00Z</published>
+            <updated>2015-03-01T02:30:00Z</updated>
+            <published>2015-03-01T02:30:00Z</published>
             <id>/blog/2015/02/redesigned-theme-using-materiaize.html</id>
                         <category   scheme="/blog/tags"
                         term="materialize"
@@ -29,7 +29,7 @@
                                             </content>
         </entry>
             <entry>
-            <title type="html">FIREFOX-OS App-2 (GistHub)</title>
+            <title type="html">Launching my second Firefos-Os App - GistHub</title>
             <author><name>Varun Malhotra</name></author>
             <link href="/blog/2013/07/fOS-GistHub.html"/>
             <updated>2013-07-12T00:00:00Z</updated>
@@ -64,7 +64,7 @@
                                             </content>
         </entry>
             <entry>
-            <title type="html">Hands on FIREFOX-OS Apps(CSP)</title>
+            <title type="html">Hands on Firefox-OS Apps - Introducing CSP</title>
             <author><name>Varun Malhotra</name></author>
             <link href="/blog/2013/07/fOS-intro.html"/>
             <updated>2013-07-01T00:00:00Z</updated>

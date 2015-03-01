@@ -24,7 +24,7 @@
         compatibility mode is within the first 1K bytes
         code.google.com/p/chromium/issues/detail?id=23003 -->
 
-  <title>Redesigned website using material design</title>
+  <title>Redesigned website using Material Design</title>
   <meta name="description" content="Smile. Laugh.
 ">
   <meta name="author" content="Varun Malhotra">
@@ -44,7 +44,6 @@
     <link rel="stylesheet" href="/media/css/kudos.min.css">
 
   <link rel="stylesheet" href="/media/css/site.css">
-  <link rel="stylesheet" href="/media/css/syntax.css">
 
   <!-- Add custom CSS here -->
   <link rel="stylesheet" type="text/css" href="/media/css/custom.css">
@@ -55,7 +54,7 @@
     <script src="/media/js/libs/jquery.sidr.min.js"></script>
     <script src="/media/js/libs/modernizr-1.7.min.js"></script>
     <script src="/media/js/libs/jquery.scrollUp.min.js"></script>
-    <script type="text/javascript" src="https://github.com/Dogfalo/materialize/blob/master/dist/js/materialize.min.js"></script>
+    <script type="text/javascript" src="/media/js/libs/materialize.min.js"></script>
     <!-- <script src="/media/js/libs/no-crack.js"></script> -->
 
 
@@ -132,9 +131,12 @@
             <div class="col s2">
           <div style="margin-top:400px;">
             <div style="">
-              <ul class="section table-of-contents" style="margin-top:200px;">
+              <ul class="section table-of-contents" style="margin-top:200px;width:151px;word-wrap:break-word;">
                 <li style="color:#222;font-weight:bold;padding-bottom:5px;">Table of Contents</li>
                                   <li><a href="#introduction">Introduction</a></li>
+                                  <li><a href="#material--design--perspective">Material Design Perspective</a></li>
+                                  <li><a href="#getting--hands--dirty">Getting Hands Dirty</a></li>
+                                  <li><a href="#showcase">Showcase</a></li>
                               </ul>
             </div>
           </div>
@@ -151,7 +153,6 @@
             if ($('.table-of-contents').length) {
               if ($('.table-of-contents').length) {
                 var toc_offset = $('.table-of-contents').first().offset().top;
-                console.log(toc_offset)
                 $('.table-of-contents').each(function() {
                   var origin = $(this);
                   origin.pushpin({ top: toc_offset-200, bottom: $(document).height() - window.innerHeight });
@@ -164,14 +165,14 @@
       
       <h1 class="title">
           <a href="/blog/2015/02/redesigned-theme-using-materiaize.html">
-              Redesigned website using material design
+              Redesigned website using Material Design
           </a>
       </h1>
       <div class="row" style="margin-top:50px;">
         <div class="col offset-s2 s6 vertical-center">
           <img class="circle  responsive-img  blog-dude-pic  materialboxed" data-caption="Me building the next generation software at Wingify, India :)" src="/media/img/me__2.jpg">
-          <time datetime="2015-02-10" class="grey-text" style="margin-left:5px;">
-              <b><i><a href="/about">Varun</a></i></b> wrote this on Tue, 10 Feb 2015
+          <time datetime="2015-03-01" class="grey-text" style="margin-left:5px;">
+              <b><i><a href="/about">Varun</a></i></b> wrote this on Sun, 01 Mar 2015
           </time>
         </div>
         <div class="col offset-s1 s1">
@@ -184,14 +185,59 @@
         <div id="introduction" class="section scrollspy  push-half--top">
 
 
-<p>Will be adding <em>how I redesigned this personal website using awesome <a href="http://materializecss.com/">Materialize</a> framework</em>&nbsp;soon.</p>
-</div>            </br>
+<p>Few months back, Google introduced the visual language, a single underlying system that allows for a unified experience across platforms and device sizes - <a href="http://www.google.com/design/spec/material-design/introduction.html">Material Design</a>. Since then, I&#8217;m following it and my mind enthusiastically forces me to develop something using it. While I was researching, I came across an open-sourced framework, <a href="http://materializecss.com">materialize</a>, which I think is the now most popular one among all. I started digging deep into it on Github and it really inspired me in kick-starting to develop. Finally, I decided to re-design my personal website on a whim, whose frontend was earlier coded using bootstrap3, now on top of Material Design. I introduced many new features like <em>Kudo</em>ing blog-posts, <em>Table of Contents</em> <span class="amp">&amp;</span> <em>Read time</em> for blog-post, <em>side-navigation-bar</em>, <em>share selected text on Twitter</em>, etc along with many improvements visually as well as&nbsp;technically.</p>
+</div><div id="material--design--perspective" class="section scrollspy  push-half--top">
+
+
+<h2>Material Design&#8217;s perspective? <a href="#material--design--perspective"><i class="fa fa-link  content-link"></i></a></h2>
+<blockquote>
+We worked together - Android, Chrome and across all of Google - to craft one consistent vision for mobile, desktop and beyond.<br/>
+- Sundar Pichai, Senior Vice President
+</blockquote>
+
+<p>Material Design was introduced to change the User Experience by incorporating the classic principles of good design with the innovation. The designs are not just visually appealing but also convey the meaning aptly.
+<img src="http://porhomme.com/wp-content/uploads/2014/06/google-material-design-android-chrome-os-web-1.jpg" style="height: 450px;width: 92%;margin: 0 auto;"></p>
+</div><div id="getting--hands--dirty" class="section scrollspy  push-half--top">
+
+
+<h2>Getting my hands dirty <a href="#getting--hands--dirty"><i class="fa fa-link  content-link"></i></a></h2>
+<p>While my coffee was dipping off the mug, I was lucky enough to come across such a highly featured framework, materialize, where new features are still getting born. Please have a look at their <a href="http://materializecss.com">official website</a> once, the team has provided a nice demo of each such feature. Since, the project was in its early developement stages, I found some bugs and decided to contribute, submitted a small patch: fixing a small <span class="caps">CSS</span> issue. The world of open sourcing has taken a veer drift, seriously, and it&#8217;s worth mentioning here too&nbsp;:)</p>
+<p>Here&#8217;s a list of features, the framework has the support for, and which I have implemented on my&nbsp;website:</p>
+<ol>
+<li>Full page Slider - on my <a href="http://softvar.github.io">Home</a>&nbsp;Page</li>
+<li>Parallax plugin  - on each node page, eg. <a href="http://softvar.github.io/blog">blog</a>, <a href="http://softvar.github.io/archive">archive</a> <span class="amp">&amp;</span> <a href="http://softvar.github.io/portfolio">projects</a></li>
+<li>Pushpin plugin - for Table of Contents in my&nbsp;blogs</li>
+<li>ScrollSpy plugin - again for Table of Contents in my&nbsp;blogs</li>
+<li>Pre-loader(spinner) - while parallax-image is being getting&nbsp;rendered</li>
+<li>Tooltips - wherever&nbsp;required</li>
+<li>Toasts -  when someone kudos/unKodos my blogpost(similar to that of <a href="https://svbtle.com">svbtle</a>).</li>
+<li>Card Reveal- for displaying my <a href="http://softvar.github.io/portfolio">projects&#8217;</a>&nbsp;report-card.</li>
+<li>Icons, buttons and waves - wherever they fit&nbsp;precisely.</li>
+</ol>
+<p><img src="/media/images/showcase_site.png" style="width:100%;height:450px;"></p>
+<p>Alright! Hope it would have triggered the same adrenaline rush, what I experienced once :)
+Apart from rendering those tiny engaging pixels, <em>I planned to implement some new features to my previously monotonic website</em>.</p>
+<ol>
+<li>Floating left Sidebar for all-in-one routes for the whole site-walk, ensuring no distractness while reading&nbsp;stuff.</li>
+<li>Table of Contents in each blog for section-to-section&nbsp;jump.</li>
+<li>Inherited the way of giving <strong><em>Kudos</em></strong> as a means of liking/take-away-something from blog-post, exactly what <a href="https://svbtle.com">svbtle-blog</a> introduced. For this, I have used <a href="https://www.firebase.com/">Firebase</a> for storing, fetching and displaying the unique&nbsp;counts.</li>
+<li>Select the text which you like the most while reading blog and share it on twitter with just a single click and no&nbsp;time-loss.</li>
+<li>Automatically calculate and generate the read time for every&nbsp;blog-post.</li>
+<li>Changing Syntax highlighting theme to match the site&#8217;s theme, and to ensure better readibility.
+<img src="/media/images/syntax__highlighting.png" style="height:400px;"></li>
+</ol>
+<p>I have proudly used <a href="http://ringce.com">hyde</a> for generating my website. Read this post on <a href="/blog/2013/06/hyde.html">Getting started with hyde</a> to know more about&nbsp;it.</p>
+</div><div id="showcase" class="section scrollspy  push-half--top">
+
+
+<h2>Good News - Showcase <a href="#showcase"><i class="fa fa-link  content-link"></i></a></h2>
+<p>I was more than lucky to get my site getting featured on the framework&#8217;s official site in <a href="http://materializecss.com/showcase.html">showcase section</a>. Also, <a href="http://materialdesignblog.com/5-brilliant-material-design-portfolios-to-inspire-you/">Material Design Blog</a> lists top five entries for Material Design inspirational websites, my being the first, yay! <i class="fa  fa-thumbs-up"></i>.</p>            </br>
             <span id="twitter-share-blog-lines" style="position:absolute;top:-9999px;left:-9999px">
               <a href="#" class="tweet__url  tooltipped" data-position="right" data-tooltip="Share on Twitter"><i class="fa  fa-twitter  fa-2x" style="width: 39px;height: 40px;background: black;padding: 6px;z-index: 10000000;" ></i></a>
             </span>
 
         <a class="prev tooltipped"
-            data-tooltip="FIREFOX-OS App-2 (GistHub)"
+            data-tooltip="Launching my second Firefos-Os App - GistHub"
             data-position="top"
                         href="/blog/2013/07/fOS-GistHub.html">
             Previous blogpost
@@ -270,7 +316,6 @@
        */
       var area = document.getElementById('main-countable-content');
       Countable.once(area, function (counter) {
-        console.log(this, counter);
          var wpm = 250,
             estimatedRaw = counter.words / wpm,
             minutes = Math.round(estimatedRaw);
@@ -357,7 +402,7 @@
 <!-- End Visual Website Optimizer Asynchronous Code -->
 
     
-          <script src="/media/js/libs/materialize.min.js"></script>
+          <script src="/media/js/libs/custom-materialize.min.js"></script>
     <script>
       $(document).ready(function() {
         var lastTopTwitterShareBtn, currentTopTwitterBtn;
@@ -373,7 +418,7 @@
           $.sidr('close');
           currentTopTwitterBtn = $('#twitter-share-blog-lines').css('top');
           if (lastTopTwitterShareBtn && lastTopTwitterShareBtn == currentTopTwitterBtn && currentTopTwitterBtn != '-9999px') {
-            console.log($('#twitter-share-blog-lines').css({'top': '-9999px', 'left': '-9999px'}))
+            $('#twitter-share-blog-lines').css({'top': '-9999px', 'left': '-9999px'});
           }
           lastTopTwitterShareBtn = currentTopTwitterBtn;
         });

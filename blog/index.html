@@ -42,7 +42,6 @@
 
     
   <link rel="stylesheet" href="/media/css/site.css">
-  <link rel="stylesheet" href="/media/css/syntax.css">
 
   <!-- Add custom CSS here -->
   <link rel="stylesheet" type="text/css" href="/media/css/custom.css">
@@ -53,7 +52,7 @@
     <script src="/media/js/libs/jquery.sidr.min.js"></script>
     <script src="/media/js/libs/modernizr-1.7.min.js"></script>
     <script src="/media/js/libs/jquery.scrollUp.min.js"></script>
-    <script type="text/javascript" src="https://github.com/Dogfalo/materialize/blob/master/dist/js/materialize.min.js"></script>
+    <script type="text/javascript" src="/media/js/libs/materialize.min.js"></script>
     <!-- <script src="/media/js/libs/no-crack.js"></script> -->
 
 
@@ -171,19 +170,19 @@
 	<ul class="listing clear">
 											<li>
 				            <article >
-        <h3><a href="/blog/2015/02/redesigned-theme-using-materiaize.html">Redesigned website using material design</a></h3>
+        <h3><a href="/blog/2015/02/redesigned-theme-using-materiaize.html">Redesigned website using Material Design</a></h3>
         <a href="/blog/2015/02/redesigned-theme-using-materiaize.html"></a>
-        <p>Will be adding <em>how I redesigned this personal website using awesome <a href="http://materializecss.com/">Materialize</a> framework</em>&nbsp;soon.</p>
+        <p>Few months back, Google introduced the visual language, a single underlying system that allows for a unified experience across platforms and device sizes - <a href="http://www.google.com/design/spec/material-design/introduction.html">Material Design</a>. Since then, I&#8217;m following it and my mind enthusiastically forces me to develop something using it. While I was researching, I came across an open-sourced framework, <a href="http://materializecss.com">materialize</a>, which I think is the now most popular one among all. I started digging deep into it on Github and it really inspired me in kick-starting to develop. Finally, I decided to re-design my personal website on a whim, whose frontend was earlier coded using bootstrap3, now on top of Material Design. I introduced many new features like <em>Kudo</em>ing blog-posts, <em>Table of Contents</em> <span class="amp">&amp;</span> <em>Read time</em> for blog-post, <em>side-navigation-bar</em>, <em>share selected text on Twitter</em>, etc along with many improvements visually as well as&nbsp;technically.</p>
         <h4 class="read_more"><a href="/blog/2015/02/redesigned-theme-using-materiaize.html">Read More...</a></h4>
-        <time datetime="2015-02-10">
-            Posted: Tue, 10 Feb 2015
+        <time datetime="2015-03-01">
+            Posted: Sun, 01 Mar 2015
         </time>
     </article>
 
 				</li>
 														<li>
 				            <article >
-        <h3><a href="/blog/2013/07/fOS-GistHub.html">FIREFOX-OS App-2 (GistHub)</a></h3>
+        <h3><a href="/blog/2013/07/fOS-GistHub.html">Launching my second Firefos-Os App - GistHub</a></h3>
         <a href="/blog/2013/07/fOS-GistHub.html"></a>
         <p>Yay! this is my second approved <span class="caps">FIREFOX</span>-<span class="caps">OS</span>(<span class="caps">FOS</span>) App- <strong>GistHub</strong>, after the basic <a href="../07/fOS-intro.html">Calculator</a> app. It&#8217;s an app for firefox smartphones, which helps Github Users to access and manage their Gists instantly without opening the site in browser. It&#8217;s free to download from <a href="https://marketplace.firefox.com/app/gisthub/">Firefox marketplace</a> for firefox smartphones&nbsp;:)</p>
         <h4 class="read_more"><a href="/blog/2013/07/fOS-GistHub.html">Read More...</a></h4>
@@ -195,7 +194,7 @@
 				</li>
 														<li>
 				            <article >
-        <h3><a href="/blog/2013/07/fOS-intro.html">Hands on FIREFOX-OS Apps(CSP)</a></h3>
+        <h3><a href="/blog/2013/07/fOS-intro.html">Hands on Firefox-OS Apps - Introducing CSP</a></h3>
         <a href="/blog/2013/07/fOS-intro.html"></a>
         <p>I&#8217;m a die-hard fan of Mozilla Firefox. I always wanted to contribute to Mozilla in one or the other ways. This year only, it happened that I started getting involved in Open Source projects. Good Luck that I was familiar with <strong>Git</strong> as I used it merely for the purpose of storing my college projects :). Mozilla&#8217;s Open Source projects inspired me to contribute this time. Meanwhile, I heard the news of <span class="caps">FIREFOX</span>-<span class="caps">OS</span>, yeah, <span class="caps">FIREFOX</span>-<span class="caps">OS</span>(<span class="caps">FOS</span>) is a Linux-based open source operating system for smartphones and tablet computers being developed by&nbsp;<span class="caps">MOZILLA</span>.</p>
         <h4 class="read_more"><a href="/blog/2013/07/fOS-intro.html">Read More...</a></h4>
@@ -271,7 +270,7 @@
         };
       })
     </script>
-        <script src="/media/js/libs/materialize.min.js"></script>
+        <script src="/media/js/libs/custom-materialize.min.js"></script>
     <script>
       $(document).ready(function() {
         var lastTopTwitterShareBtn, currentTopTwitterBtn;
@@ -287,7 +286,7 @@
           $.sidr('close');
           currentTopTwitterBtn = $('#twitter-share-blog-lines').css('top');
           if (lastTopTwitterShareBtn && lastTopTwitterShareBtn == currentTopTwitterBtn && currentTopTwitterBtn != '-9999px') {
-            console.log($('#twitter-share-blog-lines').css({'top': '-9999px', 'left': '-9999px'}))
+            $('#twitter-share-blog-lines').css({'top': '-9999px', 'left': '-9999px'});
           }
           lastTopTwitterShareBtn = currentTopTwitterBtn;
         });

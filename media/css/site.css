@@ -584,13 +584,18 @@ section.content {
 #page3 {
 	background: #F8F8F8;
 }
-article.post p{
+article.post p, article.post ul, article.post ol{
   font-size: 18px;
   font-family: 'Bitter', serif;
   line-height: 37px;
   text-align:justify;
   text-justify:inter-word;
   margin: 6px 0;color: #333333;
+}
+
+article.post ul > li, article.post ol > li {
+  list-style: inherit;
+  margin-left: 40px;
 }
 
 article.post h6{

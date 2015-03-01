@@ -42,7 +42,6 @@
 
     
   <link rel="stylesheet" href="/media/css/site.css">
-  <link rel="stylesheet" href="/media/css/syntax.css">
 
   <!-- Add custom CSS here -->
   <link rel="stylesheet" type="text/css" href="/media/css/custom.css">
@@ -55,7 +54,7 @@
     <script src="/media/js/libs/jquery.sidr.min.js"></script>
     <script src="/media/js/libs/modernizr-1.7.min.js"></script>
     <script src="/media/js/libs/jquery.scrollUp.min.js"></script>
-    <script type="text/javascript" src="https://github.com/Dogfalo/materialize/blob/master/dist/js/materialize.min.js"></script>
+    <script type="text/javascript" src="/media/js/libs/materialize.min.js"></script>
     <!-- <script src="/media/js/libs/no-crack.js"></script> -->
 
 
@@ -463,7 +462,7 @@ Obstacles in between makes the situation a bit trickier.
         };
       })
     </script>
-        <script src="/media/js/libs/materialize.min.js"></script>
+        <script src="/media/js/libs/custom-materialize.min.js"></script>
     <script>
       $(document).ready(function() {
         var lastTopTwitterShareBtn, currentTopTwitterBtn;
@@ -479,7 +478,7 @@ Obstacles in between makes the situation a bit trickier.
           $.sidr('close');
           currentTopTwitterBtn = $('#twitter-share-blog-lines').css('top');
           if (lastTopTwitterShareBtn && lastTopTwitterShareBtn == currentTopTwitterBtn && currentTopTwitterBtn != '-9999px') {
-            console.log($('#twitter-share-blog-lines').css({'top': '-9999px', 'left': '-9999px'}))
+            $('#twitter-share-blog-lines').css({'top': '-9999px', 'left': '-9999px'});
           }
           lastTopTwitterShareBtn = currentTopTwitterBtn;
         });

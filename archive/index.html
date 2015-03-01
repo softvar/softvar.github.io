@@ -43,7 +43,6 @@
     <link rel="stylesheet" href="/media/css/kudos.min.css">
 
   <link rel="stylesheet" href="/media/css/site.css">
-  <link rel="stylesheet" href="/media/css/syntax.css">
 
   <!-- Add custom CSS here -->
   <link rel="stylesheet" type="text/css" href="/media/css/custom.css">
@@ -54,7 +53,7 @@
     <script src="/media/js/libs/jquery.sidr.min.js"></script>
     <script src="/media/js/libs/modernizr-1.7.min.js"></script>
     <script src="/media/js/libs/jquery.scrollUp.min.js"></script>
-    <script type="text/javascript" src="https://github.com/Dogfalo/materialize/blob/master/dist/js/materialize.min.js"></script>
+    <script type="text/javascript" src="/media/js/libs/materialize.min.js"></script>
     <!-- <script src="/media/js/libs/no-crack.js"></script> -->
 
 
@@ -142,12 +141,12 @@
 			<ol class="listing_blog clear">
 				<li>
 			    	        <article >
-        <span id="h4_size" ><a href="/blog/2015/02/redesigned-theme-using-materiaize.html">Redesigned website using material design</a></span>
+        <span id="h4_size" ><a href="/blog/2015/02/redesigned-theme-using-materiaize.html">Redesigned website using Material Design</a></span>
         <div style="color:#bdbdbd;">
-           <i class="fa fa-bookmark"></i> <span>0 min read</span>
+           <i class="fa fa-bookmark"></i> <span>None min read</span>
                             <span id='/blog/2015/02/redesigned-theme-using-materiaize.html'></span>
                 <script type="text/javascript">
-                    document.getElementById('/blog/2015/02/redesigned-theme-using-materiaize.html').innerHTML = '<i class="fa fa-clock-o"></i> ' + (moment('2015-02-10 01:40:00').fromNow()) + ' ';
+                    document.getElementById('/blog/2015/02/redesigned-theme-using-materiaize.html').innerHTML = '<i class="fa fa-clock-o"></i> ' + (moment('2015-03-01 02:30:00').fromNow()) + ' ';
                 </script>
                     </div>
             </article>
@@ -160,7 +159,7 @@
 			<ol class="listing_blog clear">
 				<li>
 			    	        <article >
-        <span id="h4_size" ><a href="/blog/2013/07/fOS-GistHub.html">FIREFOX-OS App-2 (GistHub)</a></span>
+        <span id="h4_size" ><a href="/blog/2013/07/fOS-GistHub.html">Launching my second Firefos-Os App - GistHub</a></span>
         <div style="color:#bdbdbd;">
            <i class="fa fa-bookmark"></i> <span>5 min read</span>
                     </div>
@@ -168,7 +167,7 @@
 
 				</li><li>
 			    	        <article >
-        <span id="h4_size" ><a href="/blog/2013/07/fOS-intro.html">Hands on FIREFOX-OS Apps(CSP)</a></span>
+        <span id="h4_size" ><a href="/blog/2013/07/fOS-intro.html">Hands on Firefox-OS Apps - Introducing CSP</a></span>
         <div style="color:#bdbdbd;">
            <i class="fa fa-bookmark"></i> <span>3 min read</span>
                     </div>
@@ -234,7 +233,6 @@
        */
       var area = document.getElementById('main-countable-content');
       Countable.once(area, function (counter) {
-        console.log(this, counter);
          var wpm = 250,
             estimatedRaw = counter.words / wpm,
             minutes = Math.round(estimatedRaw);
@@ -321,7 +319,7 @@
 <!-- End Visual Website Optimizer Asynchronous Code -->
 
     
-          <script src="/media/js/libs/materialize.min.js"></script>
+          <script src="/media/js/libs/custom-materialize.min.js"></script>
     <script>
       $(document).ready(function() {
         var lastTopTwitterShareBtn, currentTopTwitterBtn;
@@ -337,7 +335,7 @@
           $.sidr('close');
           currentTopTwitterBtn = $('#twitter-share-blog-lines').css('top');
           if (lastTopTwitterShareBtn && lastTopTwitterShareBtn == currentTopTwitterBtn && currentTopTwitterBtn != '-9999px') {
-            console.log($('#twitter-share-blog-lines').css({'top': '-9999px', 'left': '-9999px'}))
+            $('#twitter-share-blog-lines').css({'top': '-9999px', 'left': '-9999px'});
           }
           lastTopTwitterShareBtn = currentTopTwitterBtn;
         });

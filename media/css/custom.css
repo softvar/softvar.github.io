@@ -106,7 +106,7 @@ footer {
     text-align: center;
     padding: 5px;
     font-size: 16px;
-    font-family: 'Lato', sans-serif;font-family: 'Bitter', serif;
+    font-family: 'Bitter', serif;
 }
 
 #social-icons {
@@ -270,4 +270,21 @@ a .fa-stack-overflow, .fa-github, .fa-linkedin, .fa-twitter, .fa-envelope {
     color: #000;
     font-size: 20px;
     border: 2px double #fff;
+}
+
+blockquote {
+  margin: 20px 0;
+  padding-left: 1.5rem;
+  border-left: 5px solid #39BB9D;
+  font-family: 'Bitter', serif;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.section {
+  padding: 0px;
+}
+
+ul.table-of-contents a.active {
+    color: #a8a8a8;
 }

@@ -42,7 +42,6 @@
 
     
   <link rel="stylesheet" href="/media/css/site.css">
-  <link rel="stylesheet" href="/media/css/syntax.css">
 
   <!-- Add custom CSS here -->
   <link rel="stylesheet" type="text/css" href="/media/css/custom.css">
@@ -53,7 +52,7 @@
     <script src="/media/js/libs/jquery.sidr.min.js"></script>
     <script src="/media/js/libs/modernizr-1.7.min.js"></script>
     <script src="/media/js/libs/jquery.scrollUp.min.js"></script>
-    <script type="text/javascript" src="https://github.com/Dogfalo/materialize/blob/master/dist/js/materialize.min.js"></script>
+    <script type="text/javascript" src="/media/js/libs/materialize.min.js"></script>
     <!-- <script src="/media/js/libs/no-crack.js"></script> -->
 
 
@@ -135,6 +134,7 @@
               <img class="circle  responsive-img  dude-pic" src="/media/img/me__4.jpg">
             </li>
           </ul>
+          <div style="text-align:center;">Varun Malhotra</div>
         </div>
         <div class="" id="social-icons">
           <a href="http://www.linkedin.com/pub/varun-malhotra/71/a14/131" target="_blank" ><i class="fa  fa-linkedin  fa-2x " title="LinkedIn" ></i></a>
@@ -246,7 +246,7 @@
         };
       })
     </script>
-        <script src="/media/js/libs/materialize.min.js"></script>
+        <script src="/media/js/libs/custom-materialize.min.js"></script>
     <script>
       $(document).ready(function() {
         var lastTopTwitterShareBtn, currentTopTwitterBtn;
@@ -262,7 +262,7 @@
           $.sidr('close');
           currentTopTwitterBtn = $('#twitter-share-blog-lines').css('top');
           if (lastTopTwitterShareBtn && lastTopTwitterShareBtn == currentTopTwitterBtn && currentTopTwitterBtn != '-9999px') {
-            console.log($('#twitter-share-blog-lines').css({'top': '-9999px', 'left': '-9999px'}))
+            $('#twitter-share-blog-lines').css({'top': '-9999px', 'left': '-9999px'});
           }
           lastTopTwitterShareBtn = currentTopTwitterBtn;
         });

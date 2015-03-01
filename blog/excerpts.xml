@@ -7,16 +7,16 @@
         <link href="/"/>
     
         
-    <updated>2015-02-18T01:20:07Z</updated>
+    <updated>2015-03-02T01:57:48Z</updated>
 
     <id>/blog/excerpts.xml/</id>
 
             <entry>
-            <title type="html">Redesigned website using material design</title>
+            <title type="html">Redesigned website using Material Design</title>
             <author><name>Varun Malhotra</name></author>
             <link href="/blog/2015/02/redesigned-theme-using-materiaize.html"/>
-            <updated>2015-02-10T01:40:00Z</updated>
-            <published>2015-02-10T01:40:00Z</published>
+            <updated>2015-03-01T02:30:00Z</updated>
+            <published>2015-03-01T02:30:00Z</published>
             <id>/blog/2015/02/redesigned-theme-using-materiaize.html</id>
                         <category   scheme="/blog/tags"
                         term="materialize"
@@ -27,10 +27,10 @@
             
             <content type="html">
                 
-                &lt;p&gt;Will be adding &lt;em&gt;how I redesigned this personal website using awesome &lt;a href=&#34;http://materializecss.com/&#34;&gt;Materialize&lt;/a&gt; framework&lt;/em&gt;&amp;nbsp;soon.&lt;/p&gt;            </content>
+                &lt;p&gt;Few months back, Google introduced the visual language, a single underlying system that allows for a unified experience across platforms and device sizes - &lt;a href=&#34;http://www.google.com/design/spec/material-design/introduction.html&#34;&gt;Material Design&lt;/a&gt;. Since then, I&amp;#8217;m following it and my mind enthusiastically forces me to develop something using it. While I was researching, I came across an open-sourced framework, &lt;a href=&#34;http://materializecss.com&#34;&gt;materialize&lt;/a&gt;, which I think is the now most popular one among all. I started digging deep into it on Github and it really inspired me in kick-starting to develop. Finally, I decided to re-design my personal website on a whim, whose frontend was earlier coded using bootstrap3, now on top of Material Design. I introduced many new features like &lt;em&gt;Kudo&lt;/em&gt;ing blog-posts, &lt;em&gt;Table of Contents&lt;/em&gt; &lt;span class=&#34;amp&#34;&gt;&amp;amp;&lt;/span&gt; &lt;em&gt;Read time&lt;/em&gt; for blog-post, &lt;em&gt;side-navigation-bar&lt;/em&gt;, &lt;em&gt;share selected text on Twitter&lt;/em&gt;, etc along with many improvements visually as well as&amp;nbsp;technically.&lt;/p&gt;            </content>
         </entry>
             <entry>
-            <title type="html">FIREFOX-OS App-2 (GistHub)</title>
+            <title type="html">Launching my second Firefos-Os App - GistHub</title>
             <author><name>Varun Malhotra</name></author>
             <link href="/blog/2013/07/fOS-GistHub.html"/>
             <updated>2013-07-12T00:00:00Z</updated>
@@ -66,7 +66,7 @@
                 &lt;p&gt;Yay! this is my second approved &lt;span class=&#34;caps&#34;&gt;FIREFOX&lt;/span&gt;-&lt;span class=&#34;caps&#34;&gt;OS&lt;/span&gt;(&lt;span class=&#34;caps&#34;&gt;FOS&lt;/span&gt;) App- &lt;strong&gt;GistHub&lt;/strong&gt;, after the basic &lt;a href=&#34;../07/fOS-intro.html&#34;&gt;Calculator&lt;/a&gt; app. It&amp;#8217;s an app for firefox smartphones, which helps Github Users to access and manage their Gists instantly without opening the site in browser. It&amp;#8217;s free to download from &lt;a href=&#34;https://marketplace.firefox.com/app/gisthub/&#34;&gt;Firefox marketplace&lt;/a&gt; for firefox smartphones&amp;nbsp;:)&lt;/p&gt;            </content>
         </entry>
             <entry>
-            <title type="html">Hands on FIREFOX-OS Apps(CSP)</title>
+            <title type="html">Hands on Firefox-OS Apps - Introducing CSP</title>
             <author><name>Varun Malhotra</name></author>
             <link href="/blog/2013/07/fOS-intro.html"/>
             <updated>2013-07-01T00:00:00Z</updated>

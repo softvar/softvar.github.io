@@ -44,7 +44,6 @@
     <link rel="stylesheet" href="/media/css/kudos.min.css">
 
   <link rel="stylesheet" href="/media/css/site.css">
-  <link rel="stylesheet" href="/media/css/syntax.css">
 
   <!-- Add custom CSS here -->
   <link rel="stylesheet" type="text/css" href="/media/css/custom.css">
@@ -55,7 +54,7 @@
     <script src="/media/js/libs/jquery.sidr.min.js"></script>
     <script src="/media/js/libs/modernizr-1.7.min.js"></script>
     <script src="/media/js/libs/jquery.scrollUp.min.js"></script>
-    <script type="text/javascript" src="https://github.com/Dogfalo/materialize/blob/master/dist/js/materialize.min.js"></script>
+    <script type="text/javascript" src="/media/js/libs/materialize.min.js"></script>
     <!-- <script src="/media/js/libs/no-crack.js"></script> -->
 
 
@@ -132,7 +131,7 @@
             <div class="col s2">
           <div style="margin-top:400px;">
             <div style="">
-              <ul class="section table-of-contents" style="margin-top:200px;">
+              <ul class="section table-of-contents" style="margin-top:200px;width:151px;word-wrap:break-word;">
                 <li style="color:#222;font-weight:bold;padding-bottom:5px;">Table of Contents</li>
                                   <li><a href="#introduction">Introduction</a></li>
                                   <li><a href="#installation">Installation</a></li>
@@ -158,7 +157,6 @@
             if ($('.table-of-contents').length) {
               if ($('.table-of-contents').length) {
                 var toc_offset = $('.table-of-contents').first().offset().top;
-                console.log(toc_offset)
                 $('.table-of-contents').each(function() {
                   var origin = $(this);
                   origin.pushpin({ top: toc_offset-200, bottom: $(document).height() - window.innerHeight });
@@ -335,7 +333,7 @@ Publishes the site based on configuration. Currently the only supported publishi
         </a>
 
         <a class="next tooltipped"
-            data-tooltip="Hands on FIREFOX-OS Apps(CSP)"
+            data-tooltip="Hands on Firefox-OS Apps - Introducing CSP"
             data-position="top"
                         href="/blog/2013/07/fOS-intro.html">
             Next blogpost
@@ -407,7 +405,6 @@ Publishes the site based on configuration. Currently the only supported publishi
        */
       var area = document.getElementById('main-countable-content');
       Countable.once(area, function (counter) {
-        console.log(this, counter);
          var wpm = 250,
             estimatedRaw = counter.words / wpm,
             minutes = Math.round(estimatedRaw);
@@ -494,7 +491,7 @@ Publishes the site based on configuration. Currently the only supported publishi
 <!-- End Visual Website Optimizer Asynchronous Code -->
 
     
-          <script src="/media/js/libs/materialize.min.js"></script>
+          <script src="/media/js/libs/custom-materialize.min.js"></script>
     <script>
       $(document).ready(function() {
         var lastTopTwitterShareBtn, currentTopTwitterBtn;
@@ -510,7 +507,7 @@ Publishes the site based on configuration. Currently the only supported publishi
           $.sidr('close');
           currentTopTwitterBtn = $('#twitter-share-blog-lines').css('top');
           if (lastTopTwitterShareBtn && lastTopTwitterShareBtn == currentTopTwitterBtn && currentTopTwitterBtn != '-9999px') {
-            console.log($('#twitter-share-blog-lines').css({'top': '-9999px', 'left': '-9999px'}))
+            $('#twitter-share-blog-lines').css({'top': '-9999px', 'left': '-9999px'});
           }
           lastTopTwitterShareBtn = currentTopTwitterBtn;
         });
