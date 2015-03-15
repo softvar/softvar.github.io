@@ -36,23 +36,14 @@
   <link rel="shortcut icon" href="/media/favicon.ico">
   <!-- <link rel="apple-touch-icon" href="/media/apple-touch-icon.png"> -->
   
-    <link rel="stylesheet" type="text/css" href="/media/css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="/media/css/new-site-engine.min.css">
   <link rel="stylesheet" type="text/css" href="/media/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="/media/css/jquery.sidr.dark.css">
 
     
-  <link rel="stylesheet" href="/media/css/site.css">
-
-  <!-- Add custom CSS here -->
-  <link rel="stylesheet" type="text/css" href="/media/css/custom.css">
   
     <!-- All JavaScript at the bottom, except for Modernizr which
         enables HTML5 elements & feature detects -->
-    <script src="/media/js/libs/jquery.min.js"></script>
-    <script src="/media/js/libs/jquery.sidr.min.js"></script>
-    <script src="/media/js/libs/modernizr-1.7.min.js"></script>
-    <script src="/media/js/libs/jquery.scrollUp.min.js"></script>
-    <script type="text/javascript" src="/media/js/libs/materialize.min.js"></script>
+    <script src="/media/js/new-site-engine.min.js"></script>
     <!-- <script src="/media/js/libs/no-crack.js"></script> -->
 
 
@@ -120,7 +111,7 @@
       </a>
     </div>
 
-    <div id="sidr">
+    <div id="sidr" style="display:none;">
       <div class="container" style="margin-top:30px;width:90%;">
         <div class="slider">
           <ul class="slides">
@@ -165,8 +156,8 @@
 <h1 class="tag title">materialize</h1>
 <ul class="posts clear">
 <li class="post clear">
-    <time datetime="2015-03-01">
-        Sun, 01 Mar 2015
+    <time datetime="2015-03-02">
+        Mon, 02 Mar 2015
     </time>
     <a href="/blog/2015/02/redesigned-theme-using-materiaize.html">Redesigned website using Material Design</a>
         <ul class="tags">
@@ -210,28 +201,37 @@
   ga('send', 'pageview');
 
 </script>
-<!-- Start Visual Website Optimizer Asynchronous Code -->
+<!-- Start Visual Website Optimizer Synchronous Code -->
 <script type='text/javascript'>
-    var _vwo_code=(function(){
-    var account_id=60781,
-    settings_tolerance=2000,
-    library_tolerance=2500,
-    use_existing_jquery=false,
-    // DO NOT EDIT BELOW THIS LINE
-    f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+		var _vis_opt_account_id = 60781;
+		var _vis_opt_protocol = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+		document.write('<s' + 'cript src="' + _vis_opt_protocol +
+		'dev.visualwebsiteoptimizer.com/deploy/js_visitor_settings.php?v=1&a='+_vis_opt_account_id+'&url='
+		+encodeURIComponent(document.URL)+'&random='+Math.random()+'" type="text/javascript">' + '<\/s' + 'cript>');
+		</script>
+
+		<script type='text/javascript'>
+		if(typeof(_vis_opt_settings_loaded) == "boolean") { document.write('<s' + 'cript src="' + _vis_opt_protocol +
+		'd5phz18u4wuww.cloudfront.net/vis_opt.js" type="text/javascript">' + '<\/s' + 'cript>'); }
+		// if your site already has jQuery 1.4.2, replace vis_opt.js with vis_opt_no_jquery.js above
+		</script>
+
+		<script type='text/javascript'>
+		if(typeof(_vis_opt_settings_loaded) == "boolean" && typeof(_vis_opt_top_initialize) == "function") {
+		        _vis_opt_top_initialize(); vwo_$(document).ready(function() { _vis_opt_bottom_initialize(); });
+		}
 </script>
-<!-- End Visual Website Optimizer Asynchronous Code -->
+<!-- End Visual Website Optimizer Synchronous Code -->
 
     
-        <script type="text/javascript">
+    
+      <script type="text/javascript">
       $(function () {
-        var firstSliderImage = document.getElementById('slide-image-1');
-        firstSliderImage.onload = function () {
-            $('.loader').css({'display':'none'})
-        };
+        setTimeout(function () {
+          $('.loader').css({'display':'none'});
+        }, 1200);
       })
     </script>
-        <script src="/media/js/libs/custom-materialize.min.js"></script>
     <script>
       $(document).ready(function() {
         var lastTopTwitterShareBtn, currentTopTwitterBtn;
