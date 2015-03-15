@@ -30,21 +30,37 @@
 
   <!--  Mobile viewport optimized: j.mp/bplateviewport -->
   <meta name="viewport" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Place favicon.ico & apple-touch-icon.png
         in the root of your domain and delete these references -->
   <link rel="shortcut icon" href="/media/favicon.ico">
   <!-- <link rel="apple-touch-icon" href="/media/apple-touch-icon.png"> -->
   
-        <link rel="stylesheet" type="text/css" href="/media/css/new-site-engine.min.css">
-  <link rel="stylesheet" type="text/css" href="/media/font-awesome/css/font-awesome.min.css">
+      
 
     
   
  
     <!-- All JavaScript at the bottom, except for Modernizr which
         enables HTML5 elements & feature detects -->
-    <script src="/media/js/new-site-engine.min.js"></script>
+    <script>
+     (function () {
+      var head = document.getElementsByTagName('head')[0];
+      window.loadCss = function loadCss(href) {
+        var l = document.createElement('link');
+        l.rel = 'stylesheet';
+        l.type = 'text/css';
+        l.href = href;
+        head.appendChild(l);
+        return window;
+      }
+      })();
+      window.loadCss('/media/css/new-site-engine.min.css');
+      window.loadCss('/media/font-awesome/css/font-awesome.min.css');
+    </script>
+    <script async src="/media/js/new-site-engine.min.js"></script>
+
     <!-- <script src="/media/js/libs/no-crack.js"></script> -->
 
 
@@ -455,7 +471,8 @@ Obstacles in between makes the situation a bit trickier.
 
     
     
-      <script type="text/javascript">
+    
+  <script type="text/javascript">
       $(function () {
         setTimeout(function () {
           $('.loader').css({'display':'none'});

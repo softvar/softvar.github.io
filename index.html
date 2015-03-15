@@ -5,14 +5,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<meta name="author" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<title>Varun Malhotra | HOME</title>
 
-		<!-- Materialize core CSS -->
-		<link rel="stylesheet" type="text/css" href="/media/css/new-site-engine.min.css">
-		<link rel="stylesheet" type="text/css" href="/media/font-awesome/css/font-awesome.min.css">
-
-		<script src="/media/js/new-site-engine.min.js"></script>
+		<script>
+	     (function () {
+	      var head = document.getElementsByTagName('head')[0];
+	      window.loadCss = function loadCss(href) {
+	        var l = document.createElement('link');
+	        l.rel = 'stylesheet';
+	        l.type = 'text/css';
+	        l.href = href;
+	        head.appendChild(l);
+	        return window;
+	      }
+	      })();
+	      window.loadCss('/media/css/new-site-engine.min.css');
+	      window.loadCss('/media/font-awesome/css/font-awesome.min.css');
+	    </script>
+		<script async src="/media/js/new-site-engine.min.js"></script>
 	</head>
 	<body>
 
@@ -25,14 +37,14 @@
 	          <ul class="slides">
 	            <li>
 	             <img class="bg-image" id="slide-image-1">
-	             <div class="caption center-align" style="margin-top:75px;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);">
+	             <div class="caption center-align" style="margin-top:90px;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);">
 		          <h3 style="color:#8CE2B4;">A Passionate Geek <span style="color:#fff;">o_O</span></h3>
 		          <h5 class="light grey-text text-lighten-3">Develop Software for Humanity</h5>
 		        </div>
 	            </li>
 	            <li>
 	              <img class="bg-image" src="/media/img/main__site_2.jpg">
-	              <div class="caption center-align" style="margin-top:75px;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);">
+	              <div class="caption center-align" style="margin-top:90px;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);">
 		            <h3 style="color:#8CE2B4;">Quest for Knowledge!</h3>
 		            <h5 class="light grey-text text-lighten-3">Love Nature, Music, Travelling, Gym, Quora and playing Table Tennis. </h5>
 		          </div>
@@ -135,7 +147,7 @@
 			      </div>
 			    </div>
 			</div>
-			<div class="all-body-click-region  inner__wrapper" style="display:none">
+			<div class="all-body-click-region  inner__wrapper" style="display:none;">
 				<div class="cover__container  global-text-color">
 					<h2 class="body-content">Varun Malhotra</h2>
 					<div style="text-align:center;margin-top:250px;">
