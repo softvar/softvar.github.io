@@ -7,10 +7,33 @@
         <link href="/"/>
     
         
-    <updated>2015-09-27T14:32:27Z</updated>
+    <updated>2016-02-13T04:13:32Z</updated>
 
     <id>/blog/atom.xml/</id>
 
+            <entry>
+            <title type="html">Bitbar Plugins for Github and ProductHunt Recognition</title>
+            <author><name>Varun Malhotra</name></author>
+            <link href="/blog/2016/02/bitbar-plugins-for-github-and-producthunt.html"/>
+            <updated>2016-02-13T02:49:00Z</updated>
+            <published>2016-02-13T02:49:00Z</published>
+            <id>/blog/2016/02/bitbar-plugins-for-github-and-producthunt.html</id>
+                        <category   scheme="/blog/tags"
+                        term="bitbar"
+                        label="Bitbar" />
+                        <category   scheme="/blog/tags"
+                        term="bitbar-plugin"
+                        label="Bitbar-Plugin" />
+                        <category   scheme="/blog/tags"
+                        term="ProductHunt"
+                        label="Producthunt" />
+                        <category   scheme="/blog/tags"
+                        term="Github"
+                        label="Github" />
+            
+            <content type="html">
+                                            </content>
+        </entry>
             <entry>
             <title type="html">Redesigned website using Material Design</title>
             <author><name>Varun Malhotra</name></author>

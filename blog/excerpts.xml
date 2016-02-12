@@ -7,10 +7,35 @@
         <link href="/"/>
     
         
-    <updated>2015-09-27T14:32:27Z</updated>
+    <updated>2016-02-13T04:13:32Z</updated>
 
     <id>/blog/excerpts.xml/</id>
 
+            <entry>
+            <title type="html">Bitbar Plugins for Github and ProductHunt Recognition</title>
+            <author><name>Varun Malhotra</name></author>
+            <link href="/blog/2016/02/bitbar-plugins-for-github-and-producthunt.html"/>
+            <updated>2016-02-13T02:49:00Z</updated>
+            <published>2016-02-13T02:49:00Z</published>
+            <id>/blog/2016/02/bitbar-plugins-for-github-and-producthunt.html</id>
+                        <category   scheme="/blog/tags"
+                        term="bitbar"
+                        label="Bitbar" />
+                        <category   scheme="/blog/tags"
+                        term="bitbar-plugin"
+                        label="Bitbar-Plugin" />
+                        <category   scheme="/blog/tags"
+                        term="ProductHunt"
+                        label="Producthunt" />
+                        <category   scheme="/blog/tags"
+                        term="Github"
+                        label="Github" />
+            
+            <content type="html">
+                
+                &lt;p&gt;Few days back, a project named &lt;a href=&#34;https://getbitbar.com/&#34; target=&#34;blank&#34;&gt;bitbar app&lt;/a&gt; was launched, which lets you put the output from any script or program right in your Mac &lt;span class=&#34;caps&#34;&gt;OS&lt;/span&gt; X menu bar. The app was trending on many famous sites like HackerNews, ProductHunt, Panda, etc. and is worthy of such recognition. That day onwards, my web browsing behaviour has certainly changed.
+Being a technocrat and &lt;a href=&#34;https://github.com/softvar&#34; target=&#34;blank&#34;&gt;open-source enthusiast&lt;/a&gt;, I like browsing awesome trending stuff each day on various popular sites like Github, ProductHunt, Dribble, etc. I use &lt;a href=&#34;http://usepanda.com/&#34; target=&#34;blank&#34;&gt;Panda&lt;/a&gt; for this. But I have a bad habit of peeping whenever I build something and post it on the above mentioned sites. So, just to prevent opening and viewing stats in window each time, I really appreciate the idea of having the things which require your utmost attention directly into your viewport i.e. Mac &lt;span class=&#34;caps&#34;&gt;OS&lt;/span&gt; X menu bar &lt;i class=&#34;fa fa-smile-o&#34; style=&#34;color:#B9971D&#34;&gt;&lt;/i&gt;&lt;/p&gt;            </content>
+        </entry>
             <entry>
             <title type="html">Redesigned website using Material Design</title>
             <author><name>Varun Malhotra</name></author>
