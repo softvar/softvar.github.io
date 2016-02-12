@@ -1,5 +1,5 @@
-/* new-site-engine - v1.0.0 - 2015-09-27
- * Copyright (c) 2015 ; LICENSE MIT
+/* new-site-engine - v1.0.0 - 2016-02-13
+ * Copyright (c) 2016 ; LICENSE MIT
  */
 
 (function($, undefined){
