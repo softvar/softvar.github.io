@@ -1,4 +1,4 @@
-/* new-site-engine - v1.0.0 - 2016-02-13
+/* new-site-engine - v1.0.0 - 2016-02-22
  * Copyright (c) 2016 ; LICENSE MIT
  */
 
