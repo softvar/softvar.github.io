@@ -645,5 +645,19 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
         });
       });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/vwo-node-sdk@1/dist/vwo-javascript-sdk.min.js"></script>
+    
+    <script>
+	vwoSdk.getSettingsFile(60781, '530830122f50043102fa0b9fb4746dfe').then(function (settingsFile) {
+		const vwoClientInstance = vwoSdk.launch({
+			settingsFile
+		});
+
+		const variationName = vwoClientInstance.activate('js1', (+new Date()).toString());
+
+		// vwoClientInstance.track(campaignKey, userId, goalIdentifier);
+	});
+
+    </script>
   </body>
 </html>
